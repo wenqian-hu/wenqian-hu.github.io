@@ -234,16 +234,47 @@ p {
   font-size:14px;
 }
 
-.next{
-  margin-top: 50px !important;
+.bottom-nav{
+  display:flex;
+  justify-content: space-between;
+}
+
+.next-first{
+  margin-top: 50px !important
   color:black;
+  text-align: right;
+  text-decoration: none;
+}
+
+.next-first a{
   text-decoration: none;
   text-align: right;
+  color:#999;
+}
+
+.next-first a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.next{
+  /* margin-top: 50px !important; */
+  color:black;
+  text-decoration: none;
+  align-items: right;
+  display: inline-block;
 }
 
 .next a{
   text-decoration: none;
+  text-align: right;
   color:#999;
+}
+
+
+
+.prev{
+  display: inline-block;
 }
 
 .next a:hover{
