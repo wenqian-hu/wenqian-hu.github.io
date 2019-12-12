@@ -227,6 +227,18 @@ p {
   margin-top: 10px;
 }
 
+.quote-r{
+  text-align: right;
+  margin-bottom: 20px;
+  width:300px;
+}
+
+.quote-l{
+  text-align: left;
+  margin-bottom: 20px;
+  width:300px;
+}
+
 .about-intro{
   margin-top: 20%;
   font-family: 'Lato';
