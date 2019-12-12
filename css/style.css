@@ -101,7 +101,7 @@ p {
   padding-right:80px;
 }
 
-.quote-r{
+/* .quote-r{
   text-align: right;
   margin-bottom: 20px;
   width:300px;
@@ -111,7 +111,7 @@ p {
   text-align: left;
   margin-bottom: 20px;
   width:300px;
-}
+} */
 
 .mapify-polygon {
   transition: none;
