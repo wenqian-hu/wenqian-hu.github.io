@@ -101,6 +101,18 @@ p {
   padding-right:80px;
 }
 
+.quote-r{
+  text-align: right;
+  margin-bottom: 20px;
+  width:300px;
+}
+
+.quote-l{
+  text-align: left;
+  margin-bottom: 20px;
+  width:300px;
+}
+
 .mapify-polygon {
   transition: none;
 }
@@ -225,18 +237,6 @@ p {
 .right-align{
   margin-left: 60%;
   margin-top: 10px;
-}
-
-.quote-r{
-  text-align: right;
-  margin-bottom: 20px;
-  width:300px;
-}
-
-.quote-l{
-  text-align: left;
-  margin-bottom: 20px;
-  width:300px;
 }
 
 .about-intro{
