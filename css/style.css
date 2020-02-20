@@ -25,20 +25,21 @@
   overflow-y: auto;
   background-color: white;
   color: black;
-  width: 300px;
+  width: 220px;
   z-index:1;
 }
 
 .right-col {
-  margin-left: 300px;
+  margin-left: 220px;
   max-width:1200px;
 }
 
 .sidebar {
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 .sidebar a {
+  /* font-size: 0.92rem; */
   font-size: 0.92rem;
 }
 
@@ -48,8 +49,8 @@
 
 .name{
   font-family: 'Lato';
-  font-size: 35px;
-  margin-left: 90px;
+  font-size: 30px;
+  margin-left: 60px;
   margin-top: 80px;
   margin-bottom: none;
   text-decoration: none;
@@ -58,7 +59,7 @@
 .tagline{
   font-family: 'Lato';
   font-size: 15px;
-  margin-left: 90px;
+  margin-left: 60px;
   margin-top: none;
   text-decoration: none;
 }
@@ -92,6 +93,11 @@ p {
   margin-top: 150px;
   margin-left: 80px;
   text-align:left;
+}
+
+.dumpster{
+position: absolute;
+bottom: 50px; 
 }
 
 .content-container{
@@ -172,6 +178,11 @@ p {
   margin-bottom: 50px;
 }
 
+.logo{
+  width:5%;
+  float:left;
+}
+
 /* .shadow{
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 } */
@@ -240,7 +251,7 @@ p {
 }
 
 .about-intro{
-  margin-top: 20%;
+  /* margin-top: 10%; */
   font-family: 'Lato';
   color:black;
   font-size:14px;
@@ -311,9 +322,7 @@ p {
 @media all and (max-width: 991px) {  }
 @media all and (max-width: 768px) {
 
-  .about-intro{
-    margin-top: 0;
-  }
+
   .navbar-toggle {
     display: block;
     position: absolute;

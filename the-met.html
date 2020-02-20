@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>wenqianhu</title>
+
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/about/square.jpg" />
+    <link rel="apple-touch-icon" href="assets/about/square.jpg">
+
+    <!-- My Custom CSS Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Library CSS-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+
+    <!-- Javascript Libraries-->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <nav id="left-col">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+          menu
+      </span>
+      <div>
+          <!-- <div class="side-bar-container"> -->
+          <a class="home-link" href="index.html">
+            <h2 class="name">JACKIE HU</h2>
+          </a>
+            <!-- <p class="tagline">Designer. Artist. Researcher.</p> -->
+
+          <div class="sidebar" id="js-menu">
+              <ul class="uk-nav uk-nav-default">
+                  <li><a href="ux.html">💡UX design</a></li>
+                  <!-- <li><a href="crane.html">paper crane</a></li> -->
+                  <li class="uk-active"><a href="creative-coding.html">🎨creative coding</a></li>
+                  <li><a href="interaction-design.html">🧪interaction design</a></li>
+                  <li><a href="street.html">📸photography</a></li>
+                  <li>
+                      <a href="about.html">👩🏻‍💻about</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <div class="right-col">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid-collapse" uk-grid>
+                <!-- Main Content -->
+                <div class="uk-width-5-5@m">
+                    <div class="content">
+                        <!-- <div class="content-container"> -->
+                        <img class="center" src="assets/projects/met/met-cover-2.png" alt="">
+                      <div class="description-container">
+                        <h4 class="titles">Data Visualization for the Met Museum</h4>
+
+                                <p>Toolkit // P5.JS, D3.JS</p>
+
+                                <p>Duration // 2 Month</p>
+                                <p>Collaboration // Ketaki Rao, Caitlin Coyiuto</p>
+                                <p>My Role // Designer</p>
+
+                                <!-- <p>Keywords // Left-behind Children, Collective Responsibility -->
+
+                            <div class="project-details">
+                              <h4 class="titles">Project Description</h4>
+<p>The Met Visualizations is a data visualization project that curates the art works digitally, demonstrating the Met collection in a digestible format while providing an interactive art viewing experience for the audience.
+
+</p>
+<p><a href="https://ketakisrao.github.io/Met/" target="_blank">Open Project Website and Interact with it here</a></p>
+                              <h4 class="titles">Overview & Motivation</h4>
+                              <p>The Met’s art collection is quite massive - with over 400,000 individual pieces, it is difficult for visitors to grasp the full scope of this collection, whether it be temporally or geographically. </p>
+                              <p>The goal of this project  is to present a series of visualizations that portray the collection in a digestible, succinct, format. Specifically, we focus on showing when these pieces were made, where these art pieces come from, and by country, what common mediums are utilized. Additionally, the collection holds numerous pieces made by select artists - we explore the timelines of these artists by allowing users to view the evolution of their art style, and to see when they were most prolific in their lifetime. </p>
+
+                              <h4 class="titles">World Map: The Origins of the Met Collections</h4>
+                              <p>This visualization aimed to answer our first question (Where throughout the world does the Met Collection come from?). We chose to implement a choropleth map, where the intensity of the color correlates with the number of artworks taken from that specific country. In terms of interaction, the user is also capable of hovering over a region to display the tooltip that has the country’s name and the exact art work number. </p>
+
+                              <video src="assets/projects/met/met_map.mp4" autoplay loop>
+                              </video>
+
+                              <h4 class="titles">Time Spiral: The Temporal Distribution of the Collection</h4>
+                              <p>These series of time spirals are meant to showcase the distribution of artwork creation at different time periods, and are meant to answer our second question (How is the Met Collection distributed across time?). The entire collection spans from 4300 BC to the present day, which we divided up into 5 intervals to make the information more digestible. With the exception of the BC interval (which spans from year -4300 to 0), all other intervals were 500 years in length. The BC interval was particularly long as there was not enough data to display individual spirals at 500 year intervals. </p>
+                              <video src="assets/projects/met/met_spiral.mp4" autoplay loop>
+                              </video>
+
+                              <h4 class="titles">Word Cloud: Commonly Used Mediums by Culture</h4>
+                              <p>The word clouds are meant to demonstrate what prominent medium are used in a given culture, and are meant to answer our third question (in the collection, what are common mediums by culture?). The size of each word is proportional to how common a specific medium was in that region, and any words at the center of the visualization showcase the most prominent medium for that region. </p>
+
+                              <video src="assets/projects/met/met_cloud.mp4" autoplay loop>
+                              </video>
+
+                              <h4 class="titles">Artwork Timeline: The Distribution of the Collection by Artist</h4>
+                              <p>Our final visualizations are timelines for specific artists, and these graphs help answer our fourth question (for artists whose works are in the collection, how are these works distributed temporally, and how have these works evolved stylistically?). These timelines display all art pieces in the collection by the specific artist, and will stack them at the appropriate column on the timeline for their date of creation. By presenting the data this way, users are able to view when an artist was especially prolific. Each image in a column is also hoverable, and when hovered, the image at full size renders below, along with additional information to do with the piece. This particular interaction was meant to allow users to explore how an artist’s style evolved over time, as they can simply move their cursor through the timeline to quickly browse images. </p>
+                              <video src="assets/projects/met/met_artists.mp4" autoplay loop>
+                              </video>
+
+                              <h4 class="titles">Data Source</h4>
+                              <p>The core data came from the <a href="https://metmuseum.github.io/" target="_blank">Met API</a> and their <a href="https://github.com/metmuseum/openaccess" target="_blank">open-access CSV</a>.</p>
+                              <h4 class="titles">Design Process</h4>
+
+
+                       </div>
+                    </div>
+                    <div class="bottom-nav">
+                        <div class="prev uk-nav uk-nav-default">
+                            <br></br>
+                            <a href="love-letters.html">PREV ◀️Love Letters</a>
+                        </div>
+                        <div class="next uk-nav uk-nav-default">
+                            <br></br>
+                            <a href="send-love.html">NEXT ▶️Send Love IoT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- My Custom Javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
