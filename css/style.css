@@ -97,7 +97,7 @@ p {
 
 .dumpster{
 position: absolute;
-bottom: 50px; 
+bottom: 50px;
 }
 
 .content-container{
@@ -105,6 +105,20 @@ bottom: 50px;
   padding-top: 70px;
   padding-left:150px;
   padding-right:80px;
+}
+
+.quote-sidebar{
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid;
+  line-height: 1.5em
+}
+
+.quote{
+  font-family: "Lato";
+  font-size: 16px;
+  color:#323232;
+
 }
 
 .quote-r{
@@ -118,6 +132,7 @@ bottom: 50px;
   margin-bottom: 20px;
   width:300px;
 }
+
 
 .mapify-polygon {
   transition: none;
