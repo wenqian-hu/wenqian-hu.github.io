@@ -17,7 +17,7 @@
 }
 
 #left-col {
-  position: fixed;
+  position: absolute;
   left: 0;
   top:0;
   bottom:0;
@@ -97,6 +97,7 @@ p {
   margin-left: 80px;
   text-align:left;
 }
+
 
 .dumpster{
 position: absolute;
@@ -183,7 +184,6 @@ bottom: 50px;
   margin-right:50px;
 }
 
-
 .img-m{
   width: 40%;
   margin-right:50px;
@@ -202,6 +202,10 @@ bottom: 50px;
 .img-caption{
   color: #454545;
   font-size: 14px;
+}
+
+.pic-text-center{
+  align-items: center;
 }
 /*
 .bg-card-img{
