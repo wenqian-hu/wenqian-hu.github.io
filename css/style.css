@@ -53,6 +53,7 @@
 }
 
 .sidebar {
+  margin-top: -100px;
   margin-left: 25%;
   z-index:1;
 }
@@ -503,11 +504,6 @@ font-size: 5rem;
   height:auto;
   }
 
-  .home-titles{
-    font-family: 'Cormorant-Regular';
-    margin-top: 0px;
-  }
-
   .name {
         display: block;
 /**/
@@ -522,6 +518,11 @@ font-size: 5rem;
     /*margin-left:7%;*/
     /*margin-top:4%;*/
   }
+
+    .home-titles{
+      font-family: 'Cormorant-Regular';
+      margin-top: 0px;
+    }
 
   .sidebar {
     /*margin-left:0;*/
