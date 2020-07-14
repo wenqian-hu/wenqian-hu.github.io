@@ -4,16 +4,24 @@
 }
 
 @font-face {
-  font-family: 'Lato', sans-serif;
-  /* font-family: 'Lato';
-  src: url('fonts/Lato.ttf') format('truetype'); */
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Cormorant-Regular';
+  src:
+  url('fonts/Cormorant-Regular.ttf') format('truetype');
+  font-family: 'Cormorant-Regular';
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
+@font-face{
+  font-family: 'Lato-Light';
+  src:
+  /* url('fonts/Lato-Regular.ttf') format('truetype'), */
+  url('fonts/Lato-Light.ttf') format('truetype');
 }
 
 
 #js-navbar-toggle{
-  font-family: 'Lato';
+  font-family: 'Cormorant-Regular';
 }
 
 #left-col {
@@ -26,16 +34,27 @@
   background-color: white;
   color: black;
   width: 220px;
-  z-index:1;
+}
+
+.nav-img{
+  /* position:relative; */
+  z-index: -1;
+}
+
+.text-block{
+  position: absolute;
+  top:5px;
 }
 
 .right-col {
   margin-left: 220px;
-  max-width:1200px;
+  /* max-width:1200px; */
+  /* max-width:2560px; */
 }
 
 .sidebar {
   margin-left: 25%;
+  z-index:1;
 }
 
 .sidebar a {
@@ -47,25 +66,34 @@
   text-decoration: none;
 }
 
+.right-body{
+  margin-top: 5% !important;
+}
+
 .name{
-  font-family: 'Lato';
-  font-size: 30px;
+  font-family: 'Cormorant-Regular';
+  font-size: 32px;
   margin-left: 60px;
   margin-top: 80px;
   margin-bottom: none;
   text-decoration: none;
 }
 
-.tagline{
-  font-family: 'Lato';
+.home-titles{
+  margin-top: 15%;
+  font-family: 'Cormorant-Regular';
+}
+
+/* .tagline{
+  font-family: 'Cormorant-Regular';
   font-size: 15px;
   margin-left: 60px;
   margin-top: none;
   text-decoration: none;
-}
+} */
 
 p {
-  font-family: "Lato";
+  font-family: "Lato-Light";
   font-size: 18px;
   color:#323232;
 }
@@ -73,9 +101,11 @@ p {
 
 
 .uk-nav a{
-  font-family: 'Lato';
-  font-size: 17px !important;
+  font-family: 'Cormorant-Regular';
+  font-size: 22px !important;
 }
+
+
 
 .navbar-toggle {
   display: none;
@@ -88,6 +118,37 @@ p {
   margin-right: 10%;
   margin-left: 10%;
 }
+
+.content-body {
+  margin-top: 8%
+}
+
+/* .content-cards-first-row {
+  margin:0 auto;
+  margin-top: 15%;
+  margin-bottom: 5% !important;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.content-texts-first-row {
+  margin:0 auto;
+  margin-top: 30%;
+  margin-bottom: 5% !important;
+  margin-right: 5%;
+  margin-left: 5%;
+} */
+
+.content-cards {
+  margin:0 auto;
+  margin-top: 5%;
+  /* margin-bottom: 1% !important; */
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+
 
 .icon-caption{
   font-size: 12px
@@ -112,6 +173,8 @@ bottom: 50px;
   padding-left:150px;
   padding-right:80px;
 }
+
+
 
 .quote-sidebar{
   position: relative;
@@ -203,6 +266,12 @@ bottom: 50px;
   margin-right:50px;
 }
 
+.project-img-m{
+  width: 100%;
+  margin-top: 15px;
+
+}
+
 .img-closet{
   width: 30%;
   margin-right:10px;
@@ -212,6 +281,7 @@ bottom: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 
 .img-caption{
   color: #454545;
@@ -244,10 +314,25 @@ bottom: 50px;
   color:darkgray;
 }
 
+
 .titles{
-  font-family: 'Lato';
+  font-family: 'Cormorant-Regular';
   color:black;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+.sub-titles{
+  font-family: 'Cormorant-Regular';
+  color:black;
+  font-size: 1.35rem;
+
+}
+
+#number-survey{
+  font-family: 'Cormorant-Regular';
+text-align: right;
+font-size: 5rem;
+
 }
 
 .insights{
@@ -287,6 +372,7 @@ bottom: 50px;
 }
 
 .cover-spacing{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -316,6 +402,20 @@ bottom: 50px;
   display:flex;
   justify-content: space-between;
 }
+
+#footer_text{
+  position: absolute;
+  text-align:center;
+  margin-left: 30%;
+  /* margin-right: 27%; */
+}
+
+#bottom_ellipse{
+  position: relative;
+  margin-left:55%;
+  margin-top: 20px;
+}
+
 
 .next-first{
   margin-top: 50px !important
@@ -373,6 +473,10 @@ bottom: 50px;
 
 /* Media Queries for Mobile Responsive */
 
+@media all and (min-width: 1600px) {
+. }
+
+
 @media all and (max-width: 1199px) {  }
 @media all and (max-width: 991px) {  }
 @media all and (max-width: 768px) {
@@ -392,6 +496,16 @@ bottom: 50px;
     position: relative;
     width: 100%;
     /*height:150px;*/
+  }
+
+  .nav-img{
+  width:70px;
+  height:auto;
+  }
+
+  .home-titles{
+    font-family: 'Cormorant-Regular';
+    margin-top: 0px;
   }
 
   .name {
