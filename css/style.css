@@ -71,6 +71,17 @@
   margin-top: 5% !important;
 }
 
+.content-cards a{
+  color:black;
+  text-decoration: none;
+
+}
+
+.content-cards a:hover{
+  color:black;
+  text-decoration: none;
+}
+
 .name{
   font-family: 'Cormorant-Regular';
   font-size: 32px;
@@ -373,10 +384,14 @@ font-size: 5rem;
 }
 
 .cover-spacing{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow .3s;
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+}
+
+.cover-spacing:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .cover-description a:hover{
