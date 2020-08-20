@@ -329,19 +329,19 @@ bottom: 50px;
 .headline{
   font-family: 'Cormorant-Regular';
   color:black;
-  font-size: 2.7rem;
+  font-size: 32pt;
 }
 
 .titles{
   font-family: 'Cormorant-Regular';
   color:black;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .sub-titles{
   font-family: 'Cormorant-Regular';
   color:black;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 
 }
 
@@ -402,6 +402,55 @@ font-size: 5rem;
 .cover-description a:hover{
   text-decoration: none;
 }
+
+/* alora user research bullets */
+.list-wrapper {
+  position:relative;
+  margin-top: 30px;
+  margin-left: 15%;
+}
+.list-item-wrapper {
+  margin-top:10px;
+  position:relative;
+}
+.list-bullet {
+  float:left;
+  margin-left: 30px;
+  margin-right:20px;
+  background:#C6C5FE;
+  height:20px;
+  width:20px;
+  line-height:30px;
+  border-radius:100px;
+  font-weight:700;
+  color:white;
+  text-align:center;
+}
+.text-small{
+  font-size: 16px;
+}
+.list-item {
+  display:table-row;
+  vertical-align:middle;
+}
+.purple-line {
+  background:#C6C5FE;
+  z-index:-1;
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:40px;
+}
+.white-line {
+  background:#FFF;
+  z-index:-1;
+  top:0px;
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:40px;
+}
+
 
 .right{
   align:"right";
@@ -526,17 +575,11 @@ font-size: 5rem;
 
   .name {
         display: block;
-/**/
-       /*position: absolute;*/
     margin-top:25px;
     margin-left:25px;
     top: 18px;
     font-size:1.7rem;
-    /*height:50px;*/
-    /*right: 10%;*/
-    /*margin:/* 0;*/
-    /*margin-left:7%;*/
-    /*margin-top:4%;*/
+
   }
 
     .home-titles{
