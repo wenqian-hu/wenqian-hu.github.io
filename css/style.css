@@ -207,8 +207,8 @@ bottom: 50px;
   padding-left: 1em;
   border-left: 0.2em solid;
   line-height: 1.5em;
-  border-color:#FF6600;
-  font-family: "Lato";
+  border-color:#FFF0E7;
+  font-family: "Lato-light";
   font-size: 16px;
   color:#454545;
 
@@ -353,7 +353,7 @@ font-size: 5rem;
 }
 
 .insights{
-  font-family: 'Lato';
+  font-family: 'Cormorant-Regular';
   color:#323232;
   font-size: 1.3rem;
 
@@ -428,6 +428,10 @@ font-size: 5rem;
 }
 .text-small{
   font-size: 16px;
+}
+
+.text-xsmall{
+  font-size: 14px;
 }
 .list-item {
   display:table-row;
@@ -574,7 +578,7 @@ font-size: 5rem;
   }
 
   .name {
-        display: block;
+    display: block;
     margin-top:25px;
     margin-left:25px;
     top: 18px;
