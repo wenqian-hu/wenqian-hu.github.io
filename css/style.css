@@ -123,6 +123,12 @@ p {
   display: none;
 }
 
+.tags{
+  font-family: "Lato-Light";
+  font-size: 16px;
+  color:#5C5C5C;
+}
+
 .content {
   margin:0 auto;
   margin-top: 8%;
