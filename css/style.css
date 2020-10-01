@@ -264,6 +264,8 @@ line-height: 1.5em
   }
   .introduction{
     margin-top: 10px;
+    margin-left: 50px;
+    padding: 0px;
   }
   .body-margin{
     margin-left: 50px;
