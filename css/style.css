@@ -3,19 +3,12 @@
     background: black !important;
 } */
 
+
 body{
-  background-color: #151515;!important;
+  height: 100%; !important
+  overflow: auto;
+  background-color: #151515;
   color:#F5F4F4;
-}
-
-
-@font-face {
-  /* font-family: 'Lato', sans-serif; */
-  font-family: 'Cormorant-Regular';
-  src:
-  url('fonts/Cormorant-Regular.ttf') format('truetype');
-  font-family: 'Cormorant-Regular';
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face{
@@ -217,6 +210,11 @@ line-height: 1.5em
   font-size: 16px;
 }
 
+#sketch-div{
+  display:contents;!important
+}
+
+
 
 #footer_text{
   text-align:center;
@@ -248,14 +246,11 @@ line-height: 1.5em
     font-size:30px;
   }
 
+
  }
 @media all and (max-width: 575px) {
+  #sketch-div{
+    display: none;
+  }
 
-.content {
-  margin:0 auto;
-  margin-top: 3%;
-  margin-bottom: 3% !important;
-  margin-right: 3%;
-  margin-left: 3%;
-}
 }
