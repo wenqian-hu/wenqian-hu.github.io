@@ -22,10 +22,9 @@
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/about/Ellipse_S.png" />
-    <link rel="apple-touch-icon" href="assets/about/Ellipse_S.png">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
     <!-- My Custom CSS Styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,192 +32,173 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
 
     <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-    <nav id="left-col">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          menu
-      </span>
-        <div class="nav-container">
-            <img class="nav-img" src="assets/about/Ellipse-cut.png" alt="">
-            <div class="text-block">
-                <!-- <div class="side-bar-container"> -->
-                <a class="home-link" href="index.html">
-                    <h2 class="name">JACKIE HU</h2>
-                </a>
-                <!-- <p class="tagline">Designer. Artist. Researcher.</p> -->
-            </div>
+  <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">
+                  <img style="padding:20px;"src="assets/about/logo-home.png" alt="">
+                </a></li>
 
-            <div class="sidebar" id="js-menu">
-                <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><a href="ux.html">Product Design</a></li>
-                    <li><a href="creative-coding.html">Creative Coding</a></li>
-                    <li><a href="street.html">Photography</a></li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#"><p> UX DESIGN</p></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="discover.html"><p>APP ASSIST</p></a></li>
+                            <li><a href="alora.html"><p>ALORA</p></a></li>
+                            <li><a href="nba.html"><p>NBA QMQ</p> </a></li>
+                            <li><a href="oddio.html"><p>ODDIO</p> </a></li>
+                            <li><a href="cui-food.html"><p> REMEMBER IT</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><p>CODING</p></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li><a href="love-letters.html"><p>LOVE LETTERS</p></a></li>
+                          <li><a href="camus.html"><p>CAMUS</p></a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li><a href="assets/about/JackieHu-CMUMHCI.pdf"  target="_blank"><p>RESUME</p></a></li>
+            </ul>
         </div>
     </nav>
+    <!-- END NAV -->
 
-    <div class="right-col">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-collapse" uk-grid>
-                <!-- Main Content -->
-                <div class="uk-width-5-5@m">
-                    <div class="content">
-                        <!-- <div class="content-container"> -->
-                        <img src="assets/projects/alora/alora_cover.jpg">
-                        <div class="description-container">
-                            <h4 class="titles">Alora: Chrome extension that protects your online data privacy <span class="uk-label uk-label-success">In Progress</span></h4>
-                            <p><b>My Role:</b> Product Designer
-                                <br>
-                                <b>Time:</b> May 2020 - Present
-                                <br>
-                                <b>Conext:</b> Freelance / Personal Side Project
-                                <br>
+    <!-- PROJETC CONTENT -->
+    <div class="project-content">
+        <img style="width:100%" src="assets/alora/alora-cover.png" alt="">
 
+        <h1 class="headings body-margin" style="width:60%">Alora: Chrome entension that protects your online data privacy</h1>
 
-                                <div class="project-details">
-                                    <!-- Project Description -->
-                                    <br>
-                                    <p class="titles">The Challenge</p>
-                                    <p class="headline">How might we grant netizen better ownership of personal data?</p>
-                                    <p>We live in an age where we trade privacy for convenience. Internet companies rely on collecting user data to make profits, while the data collecting process and the generated data profiles are off the control of users.
-                                        What can we do to change the situation?</p>
-                                    <br>
-                                    <p class="titles">Our Solution</p>
-                                    <!-- solution -->
-                                    <div class="uk-child-width-1-2@s" uk-grid style="margin-top:10%;">
-                                        <div>
-                                            <img src="assets/projects/alora/Alora-solution.png" alt="">
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <p>Alora is a Google Chrome extension that endows users with personal data management and data tracking transparency. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                </div>
+        <div class="role-time-team-container">
+            <p class="role-time-team body-margin"> <b>My Role</b> <br> Design Lead </p>
+            <p class="role-time-team body-margin"><b>Timeline</b> <br>May 2020 - Present</p>
+        </div>
 
-                                <!-- research -->
-                                <p class="titles">User Research</p>
-                                <!-- bullets with lines -->
-                                <div class="list-wrapper">
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Challenge</p>
+            <h1 class="headings body-margin" style="width:60%">How might we grant netizen better ownership of personal data?</h1>
 
-                                    <div class="purple-line"></div>
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
 
-                                    <div class="list-item-wrapper">
-                                        <div class="list-bullet"></div>
-                                        <div class="list-item">
-                                            <p><i>Survey</i></p>
-                                            <p class="text-small">49 respondents</p>
-                                            <div class="list-text">
-                                                <p>45% of the respondents said that they cleaned web history once several months</p>
-
-                            </p>
-                            </div>
-                            </div>
-                            </div>
-
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <p><i>Semi-structured Interview</i></p>
-                                    <p class="text-small">9 interviewees</p>
-                                    <div class="list-text">
-                                        <p>“I would appreciate transparency over privacy way more - what data is being tracked and who it is shared with.”</p>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <p><i>Speed Dating</i></p>
-                                    <p class="text-small">15 participants</p>
-                                    <div class="list-text">
-                                        <p>Keyword searching in Chrome history has substituted the need for history categorization. </p>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="white-line"></div>
-                            </div>
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-
-                            <!-- insights -->
-                            <p class="titles">Insights</p>
-                              <img class="center"src="assets/projects/alora/alora_insights.png" alt="">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-
-                            <!-- persona -->
-                            <p class="titles">Persona</p>
-                            <p>We are targeting tech savvy users who have high privacy consiciousness. This user group, based on our research, is more likely to take active actions to protect their private data.</p>
-                              <img src="assets/projects/alora/alora_persona.png" alt="">
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-
-                            <!-- Design Iterations -->
-                            <p class="titles">Design Iterations</p>
-                            <p>Through multiple rounds of interations and A/B testings, we kept improving the clarity and the usability of Alora based on user feedback.</p>
-                            <img src="assets/projects/alora/DesignIterations.png" alt="">
-                            <p>+ Tooltips explaining cookies and trackers are helpful and educative
-                            </p>
-                            <p>+ Showing status gives the users a sense of mental security and accomplishment  </p>
-
-                            <br>
-                            <img src="assets/projects/alora/alora_1.png" alt="">
-                            <img src="assets/projects/alora/alora_2.png" alt="">
-                            <img src="assets/projects/alora/alora_3.png" alt="">
-                            <img src="assets/projects/alora/alora_4.png" alt="">
-
-
-
-
-
-
-
-                            <!-- <div class="bottom-nav">
-                                <div class="prev uk-nav uk-nav-default">
-                                    <br></br>
-                                    <a href="mhci-capstone.html">PREV ◀️Discover x MHCI Capstone</a>
-                                </div>
-                                <div class="next uk-nav uk-nav-default">
-                                    <br></br>
-                                    <a href="Oddio.html">NEXT ▶️Oddio</a>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- footer -->
-                    <hr style="width:50%;text-align:center; margin-left:25%">
-                    <!-- <img src="assets/about/footer.png" alt=""> -->
-                    <p id="footer_text">Design + Code by Jackie Hu</p>
-                    <img src="assets/about/Ellipse_S.png" id="bottom_ellipse" alt="">
-
+                <div>
+                </div>
+                <div>
+                    <p class="body-margin">We live in an age where we trade privacy for convenience. Internet companies rely on collecting user data to make profits, while the data collecting process and the generated data profiles are off the control of users. What can we
+                        do to change the situation?</p>
                 </div>
             </div>
-
         </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Solution</p>
+            <img class="img-center-M" src="assets/alora/alora-solution.png" alt="">
+            <p class="text-center">Alora is a Google Chrome extension that endows users with personal data management and data tracking transparency. </p>
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">User Research</p>
+
+            <!-- bullets with lines -->
+            <div class="list-wrapper">
+                <div class="purple-line"></div>
+                <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <p><i>Survey</i></p>
+                        <p class="text-small">49 respondents</p>
+                        <div class="list-text">
+                            <p>
+                                <b>45% of the respondents said that they cleaned web history once several months
+
+</b>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <p><i>Semi-structured Interview</i></p>
+                        <p class="text-small">9 interviewees</p>
+                        <div class="list-text">
+                            <p><b> “I would appreciate transparency over privacy way more - what data is being tracked and who it is shared with.”</b></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <p><i>Speed Dating</i></p>
+                        <p class="text-small">15 participants</p>
+                        <div class="list-text">
+                            <p><b>Keyword searching in Chrome history has substituted the need for history categorization.</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">Persona</p>
+            <p class="body-margin">We are targeting tech savvy users who have high privacy consiciousness. This user group, based on our research, is more likely to take active actions to protect their private data.</p>
+            <img src="assets/alora/alora_persona.png" alt="">
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">Design Iterations</p>
+            <p class="body-margin">
+              Through multiple rounds of interations and A/B testings, we kept improving the clarity and the usability of Alora based on user feedback.
+            </p>
+            <p class="body-margin">
+              + Tooltips explaining cookies and trackers are helpful and educative
+            </p>
+            <p class="body-margin">
+              + Showing status gives the users a sense of mental security and accomplishment
+            </p>
+
+            <img class="img-center-L" src="assets/alora/alora_iterations.png" alt="">
+        </div>
+
+        <div class="content-sections">
+          <p class="section-titles body-margin">Design Results</p>
+            <img class="img-center-L" src="assets/alora/alora_design.png" alt="">
+        </div>
+
+
+        <!-- PROJECT CONTENT END DIV -->
     </div>
 
-    <!-- My Custom Javascript -->
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>    <br>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

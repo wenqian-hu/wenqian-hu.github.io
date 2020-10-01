@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-172742333-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172742333-1');
+    </script>
 
     <title>JACKIE HU | DESIGNER</title>
 
@@ -19,10 +22,9 @@
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/about/Ellipse_S.png" />
-    <link rel="apple-touch-icon" href="assets/about/Ellipse_S.png">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
     <!-- My Custom CSS Styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,104 +32,132 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
 
     <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <nav id="left-col">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-          menu
-      </span>
-      <div class="nav-container">
-          <img class="nav-img" src="assets/about/Ellipse-cut.png" alt="">
-          <div class="text-block">
-              <!-- <div class="side-bar-container"> -->
-              <a class="home-link" href="index.html">
-                  <h2 class="name">JACKIE HU</h2>
-              </a>
-              <!-- <p class="tagline">Designer. Artist. Researcher.</p> -->
-              </div>
+  <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">
+                  <img style="padding:20px;"src="assets/about/logo-home.png" alt="">
+                </a></li>
 
-              <div class="sidebar" id="js-menu">
-                  <ul class="uk-nav uk-nav-default">
-                      <li><a href="ux.html">Product Design</a></li>
-                      <li class="uk-active"><a href="creative-coding.html">Creative Coding</a></li>
-                      <li><a href="street.html">Photography</a></li>
-                      <li>
-                          <a href="about.html">About</a>
-                      </li>
-                  </ul>
-              </div>
-      </div>
-  </nav>
+            </ul>
 
-    <div class="right-col">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-collapse" uk-grid>
-                <!-- Main Content -->
-                <div class="uk-width-5-5@m">
-                    <div class="content">
-                        <!-- <div class="content-container"> -->
-                        <video src="assets/projects/camus-covers/albert-camus-covers-reel.mp4" autoplay loop>
-                          </video>
-                      <div class="description-container">
-                        <h4 class="titles">Generative Book Covers for Albert Camus</h4>
-
-                        <p><b>Individual Work</b>
-                            <br>
-                            <b>Time</b> 1 month | 2018 <br>
-                            <b>Toolkit</b> P5.JS <br>
-                            <b>Instructor</b> Rune Madsen <br>
-                            <b>Context</b> Interactive Media Arts, New York University Shanghai</p>
-
-                            <div class="project-details">
-                              <h4 class="titles">Project Description</h4>
-                              <p>Generative book covers and bookmarks designed for four books written by Albert Camus - The Stranger, The Fall, The Plague, and The Myth of Sisyphus. Each one extracts one symbol from the meaning of the book and uses code to create different visuals. In this way, each one has its own unique graphic and can be sold as limited editions.
-                              </p>
-                              <h4 class="titles">Books, Symbols, and Meanings</h4>
-                              <p>I summarized every book with one key word - separation, chaos, ambivalence, and repetition - and used symbols and shapes to represent each of them. </p>
-                              <p>Many consider Camus’ book to be obscure and difficult to read, so I use vivid and saturated colors to attract people’s attention and raise their desires and curiosities to read the books. </p>
-
-                              <p>The Stranger: [seperation] staircase - the desperate path protagonist chooses to go after; eyes - the moral judgments come from outside world</p>
-
-                              <img src="assets/projects/camus-covers/the-stranger-thumb.jpg" alt="">
-                              <img class="center" src="assets/projects/camus-covers/eye-bookmark-thumb.jpg" alt="">
-                              <p>The Fall: [ambivalence] black and white dots spreading on the canvas, with one side chaotic and another in order.</p>
-                              <img src="assets/projects/camus-covers/the-fall-thumb.jpg" alt="">
-                              <img class="center" src="assets/projects/camus-covers/dots-bookmark-thumb.jpg" alt="">
-                              <p>The Plague: [chaos] puzzles - unresolvable chaotic situation</p>
-                              <img src="assets/projects/camus-covers/the-plague-thumb.jpg" alt="">
-                              <img class="center" src="assets/projects/camus-covers/puzzle-bookmark-thumb.jpg" alt="">
-                              <p>The Myth of Sisyphus: [repetation] recursion - the loop of everyday life.</p>
-                              <img src="assets/projects/camus-covers/the-myth-thumb.jpg" alt="">
-                              <img class="center" src="assets/projects/camus-covers/recursion-bookmark-thumb.jpg" alt="">
-                       </div>
-                    </div>
-                    <!-- <div class="bottom-nav">
-                        <div class="prev uk-nav uk-nav-default">
-                            <br></br>
-                            <a href="love-letters.html">PREV ◀️Love Letters</a>
-                        </div>
-                        <div class="next uk-nav uk-nav-default">
-                            <br></br>
-                            <a href="send-love.html">NEXT ▶️Send Love IoT</a>
-                        </div>
-                    </div> -->
-                </div>
-                  </div>
         </div>
-        <!-- footer -->
-        <hr style="width:50%;text-align:center; margin-left:25%">
-        <!-- <img src="assets/about/footer.png" alt=""> -->
-        <p id="footer_text">Design + Code by Jackie Hu</p>
-        <img src="assets/about/Ellipse_S.png" id="bottom_ellipse" alt="">
+        <div class="uk-navbar-right">
 
-    </div>
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#"><p> UX DESIGN</p></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="discover.html"><p>APP ASSIST</p></a></li>
+                            <li><a href="alora.html"><p>ALORA</p></a></li>
+                            <li><a href="nba.html"><p>NBA QMQ</p> </a></li>
+                            <li><a href="oddio.html"><p>ODDIO</p> </a></li>
+                            <li><a href="cui-food.html"><p> REMEMBER IT</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><p>CODING</p></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li><a href="love-letters.html"><p>LOVE LETTERS</p></a></li>
+                          <li class="uk-active"><a href="camus.html"><p>CAMUS</p></a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li><a href="assets/about/JackieHu-CMUMHCI.pdf"  target="_blank"><p>RESUME</p></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- PROJETC CONTENT -->
+    <div class="project-content">
+        <video style="width:100%" src="assets/camus/albert-camus-covers-reel.mp4" autoplay loop>
+      </video>
+        <h1 class="headings body-margin">Generative Book Covers for Albert Camus
+      </h1>
+        <div class="role-time-team-container">
+            <p class="role-time-team body-margin"> <b>Individual Work</b> </p>
+            <p class="role-time-team body-margin"><b>Timeline</b> <br>1 Month | 2018</p>
+            <p class="role-time-team body-margin"><b>Toolkit</b> <br>P5.JS</p>
+            <p class="role-time-team body-margin"><b>Context</b> <br>Interactive Media Arts Capstone, New York University Shanghai</p>
+
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">About</p>
+            <p class="body-margin" style="width:60%">
+                Generative book covers and bookmarks designed for four books written by Albert Camus - The Stranger, The Fall, The Plague, and The Myth of Sisyphus. Each one extracts one symbol from the meaning of the book and uses code to create different visuals. In
+                this way, each one has its own unique graphic and can be sold as limited editions.
+            </p>
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">Books, Symbols, and Meanings
+            </p>
+            <p class="body-margin" style="width:60%">
+                I summarized every book with one key word - separation, chaos, ambivalence, and repetition - and used symbols and shapes to represent each of them.
+            </p>
+        </div>
+
+        <div class="content-sections">
+            <h1 class="headings body-margin">The Stranger
+        </h1>
+            <p class="body-margin">
+                <b><i>[Seperation] </i> </b>
+                <br> Staircase - the desperate path protagonist chooses to go after; eyes - the moral judgments come from outside world </p>
+            <img style="width:100%" src="assets/camus/the-stranger.jpg" alt="">
+        </div>
+
+        <div class="content-sections">
+            <h1 class="headings body-margin">The Fall
+        </h1>
+            <p class="body-margin">
+                <b><i>[Ambivalence] </i> </b>
+                <br>Black and white dots spreading on the canvas, with one side chaotic and another in order.</p>
+            <img style="width:100%" src="assets/camus/the-fall.jpg" alt="">
+        </div>
+
+        <div class="content-sections">
+            <h1 class="headings body-margin">The Plague
+        </h1>
+            <p class="body-margin">
+                <b><i>[Chaos] </i> </b>
+                <br>Puzzles: Unresolvable chaotic situation</p>
+            <img style="width:100%" src="assets/camus/the-plague.jpg" alt="">
+        </div>
+
+        <div class="content-sections">
+            <h1 class="headings body-margin">The Myth of Sisyphus
+        </h1>
+            <p class="body-margin" >
+                <b><i>[Pepetition] </i> </b>
+                <br>Recursion: The loop of everyday life.</p>
+            <img style="width:100%" src="assets/camus/the-myth.jpg" alt="">
+        </div>
+
+        <!-- PROJECT CONTENT END DIV -->
     </div>
 
-    <!-- My Custom Javascript -->
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>
+    <br>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

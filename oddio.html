@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-172742333-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172742333-1');
+    </script>
 
     <title>JACKIE HU | DESIGNER</title>
 
@@ -19,10 +22,9 @@
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/about/Ellipse_S.png" />
-    <link rel="apple-touch-icon" href="assets/about/Ellipse_S.png">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
     <!-- My Custom CSS Styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,202 +32,215 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
 
     <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-    <nav id="left-col">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          menu
-      </span>
-        <div class="nav-container">
-            <img class="nav-img" src="assets/about/Ellipse-cut.png" alt="">
-            <div class="text-block">
-                <!-- <div class="side-bar-container"> -->
-                <a class="home-link" href="index.html">
-                    <h2 class="name">JACKIE HU</h2>
-                </a>
-                <!-- <p class="tagline">Designer. Artist. Researcher.</p> -->
-                </div>
+  <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">
+                  <img style="padding:20px;"src="assets/about/logo-home.png" alt="">
+                </a></li>
 
-                <div class="sidebar" id="js-menu">
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="ux.html">Product Design</a></li>
-                        <li><a href="creative-coding.html">Creative Coding</a></li>
-                        <li><a href="street.html">Photography</a></li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#"><p> UX DESIGN</p></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="discover.html"><p>APP ASSIST</p></a></li>
+                            <li><a href="alora.html"><p>ALORA</p></a></li>
+                            <li><a href="nba.html"><p>NBA QMQ</p> </a></li>
+                            <li class="uk-active"><a href="oddio.html"><p>ODDIO</p> </a></li>
+                            <li><a href="cui-food.html"><p> REMEMBER IT</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><p>CODING</p></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li><a href="love-letters.html"><p>LOVE LETTERS</p></a></li>
+                          <li><a href="camus.html"><p>CAMUS</p></a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li><a href="assets/about/JackieHu-CMUMHCI.pdf"  target="_blank"><p>RESUME</p></a></li>
+            </ul>
         </div>
     </nav>
+    <!-- END NAV -->
 
-    <div class="right-col">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-collapse" uk-grid>
-                <!-- Main Content -->
-                <div class="uk-width-5-5@m">
-                    <div class="content">
-                        <!-- <div class="content-container"> -->
-                        <img src="assets/projects/oddio/cover-thumb.jpg">
-                        <div class="description-container">
-
-                            <h4 class="titles">Oddio: A new audio-based social network with a seamless, endless feed</h4>
-
-                            <p><b>My Role:</b> Experience Designer(Research / Prototype / Video Production)
-                                <br>
-                                <b>Time:</b> 10 weeks | 2020 <br>
-                                <b>Team:</b> Kyle Barron, Dennis Check, Rituparna Roy, Natalie Schade, Michael Silvestre </p>
-
-                            <div class="project-details">
-                                <!-- Project Description -->
-                                <!-- <div class="background-box-color">
-                                    <p><b>Context</b>: We are asked to design and build an interesting social app or website in the course Social Web at Carnegie Mellon University. Students are suggested doing a lean startup approach, testing ideas quickly
-                                        and building mockups first before trying to build the basics of a real app or site.</p> -->
-                                <br>
-                                <h4 class="titles">The Question</h4>
-                                <p>Extrapolating from current media trends, what features and interactions could comprise an audio-focused social platform?
-                                </p>
-                            </div>
-
-
-                            <h4 class="titles">The Solution</h4>
-                            <!-- class="uk-section-muted uk-section-xsmall" -->
-                            <div>
-                                <!-- style="margin:10px 3% 10px 5%" -->
-                                <p>Oddio is a new social media platform for bite-sized audio posts. It provides novel interactions by leveraging hands-free experience and focusing on listening behaviors. In the mean time, we designed speculatively in response
-                                    to the rise of wireless earbuds and smart home devices.</p>
-                            </div>
-                            <img src="assets/projects/oddio/oddio-pic-1.jpg" alt="">
-
-                            <br>
-                            <h4 class="titles">Concept video</h4>
-                            <p>Watch our concept video to see how you can interact with your friends on oddio- whether if you are washing dishes, taking a break from screens, or working out at home! Accessible by phones and smart home devices.</p>
-                            <video src="assets/projects/oddio/oddio-color.mp4" controls poster="assets/projects/oddio/video-cover.png">
-                              </video>
-                              <br>
-                              <br>
-
-
-                            <h4 class="titles">Audio-based social media is an underexplored field. </h4>
-                            <p>▪️ Rise in audio consumption among the Millennials and Gen Z <br> ▪️ Online radio listening crowd in the US increases 3% each year <br> ▪️ Audio is more sensory compared to reading text <br> ▪️ Screen fatigue is a rising challenge</p>
-
-
-                            <h4 class="titles"> User Research</h4>
-                            <h4 class="sub-titles" style="width:80%">We conducted a series of primary research to understand people’s preferences in audio comsumptions .</h4>
-
-                            <h1 id="number-survey" class="center">97.3% </h1>
-                            <p class="center">of our survey participants say they <em>multitask when listening to audio</em></p>
-                            <img class="center" style="width:40%" src="assets/projects/oddio/survey.png" alt="">
-                            <h4 class="sub-titles" style="width:80%">Through interviewing, storyboarding, pretotype testing, and parallel prototype testing, we found:</h4>
-                            <p>✔️ People want to interact with friend via audio <br> ✔️ Audio-to-visual transcriptions can be helpful in many scenarios <br> ⚠️ Scared of creating errors without visuals <br> ⚠️ Most people say that they prefer hands-free
-                                interactions, while we notice that there is a learning curve for voice commands</p>
-
-                            <p class="img-caption">Interested in reading our full Literature Review and Research report? <a href="assets/projects/oddio/Hu_Final_Research_Report.pdf" target="_blank">Click here</a>.</p>
-
-
-                            <!-- prototyping -->
-                            <h4 class="titles">First-round prototyping</h4>
-                            <img src="assets/projects/oddio/prototyping1.png" alt="">
-                            <p>We used “Wizard of Oz” method to conduct remote user testing (due to COVID-19). By using pre-recorded soundtracks, we were able to give participants audio feedback per screen interaction. We also offered our participants a list of voice command to find out the delicate balance between GUI and CUI.</p>
-
-                            <h4 class="titles">Final Interface Design</h4>
-                            <br>
-                            <div class="uk-child-width-1-3@s pic-text-center" uk-grid>
-                                <div>
-                                    <!-- <video src="assets/projects/oddio/listen.mp4" autoplay muted loop>
-                                      </video> -->
-                                      <img src="assets/projects/oddio/listen1.png" alt="">
-                                </div>
-                                <div>
-                                    <p>Listen to audio feeds with minimal visual supplements</p>
-                                    <!-- <p>
-                                        - Track your progress through the stream, or swipe forward and back to navigate quickly
-                                    </p>
-                                    <p>- Reply, save and like with a graphical or conversational interface
-                                    </p>
-                                    <p>- See a transcribed preview to help you keep track of comments
-                                    </p>
-                                    <p>
-                                        - Hit play on a comment to pause and listen to replies
-                                    </p> -->
-                                </div>
-                            </div>
-                            <div class="uk-child-width-1-3@s pic-text-center" uk-grid>
-                              <div class="">
-
-                              </div>
-                                <div>
-                                    <div>
-                                        <p>Post an audio clip to stay connected to the community</p>
-                                        <!-- <p>
-                                            - Select a category for your post do it finds the right listener
-                                        </p>
-                                        <p>- Add sounds you’ve or feaured sound effects to your post
-                                        </p>
-                                        <p>- Use hashtags to help users find related posts
-                                        </p>
-                                        <p>
-                                            - Preview the post you’ve created before sharing it
-                                        </p> -->
-                                    </div>
-
-                                </div>
-                                <div>
-                                  <img src="assets/projects/oddio/post1.png" alt="">
-
-                                </div>
-                            </div>
-                            <div class="uk-child-width-1-3@s pic-text-center" uk-grid>
-                                <div>
-                                  <img src="assets/projects/oddio/tweak1.png" alt="">
-                                </div>
-                                <div>
-                                    <div>
-                                        <p>Adjust your feed base on your own interests</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- team  -->
-                            <br>
-                            <br>
-
-                            <h4 class="titles">What I learnt from working remote</h4>
-                            <p>· Over-communication is the key 🔑</p>
-                            <p>· Be supportive and accountable for your team members</p>
-                            <p>· Leverage designer's skills mindsets in response to social changes</p>
-
-                            <img class="center" src="assets/projects/oddio/team.png" alt="">
-                            <p class="center">We are proud to be a collaborative and supportive team during the 2020 global pandemic!</p>
-
-
-                        <!-- <div class="bottom-nav">
-                            <div class="prev uk-nav uk-nav-default">
-                                <br></br>
-                                <a href="alora.html">PREV ◀️Alora</a>
-                            </div>
-                            <div class="next uk-nav uk-nav-default">
-                                <br></br>
-                                <a href="cui-recipe.html">NEXT ▶️Remember it</a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- footer -->
-                <hr style="width:50%;text-align:center; margin-left:25%">
-                <!-- <img src="assets/about/footer.png" alt=""> -->
-                <p id="footer_text">Design + Code by Jackie Hu</p>
-                <img src="assets/about/Ellipse_S.png" id="bottom_ellipse" alt="">
+    <!-- PROJETC CONTENT -->
+    <div class="project-content">
+      <div style="margin-top:150px;">
+          <h1 class="headings body-margin" style="width:60%">Oddio: A new audio-based social network with an endless feed</h1>
+          <div class="role-time-team-container">
+              <p class="role-time-team body-margin"> <b>My Role</b> <br>Experience Designer <br>Research | Prototype | Video Production </p>
+              <p class="role-time-team body-margin"><b>Timeline</b> <br>10 weeks | 2020</p>
+              <p class="role-time-team body-margin"><b>Team</b> <br>Kyle Barron, Dennis Check, Rituparna Roy, Natalie Schade, Michael Silvestre</p>
             </div>
+
+      <img style="z-index:-1; margin-top:-600px; width:100%" src="assets/oddio/oddio_cover.png" alt="">
+
+      </div>
+
+      <!-- OVERVIEW AND CONTEXT -->
+      <div class="content-sections context-container">
+          <p class="context">Though screen fatigue has been a rising problem, people still want to connect with their families and friends on social media. Research shows that online radio listening crowd in the US increases 3% each year, while audio-based social media is an underexplored field. What does the future of social media look like?
+          </p>
+      </div>
+
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Challenge</p>
+            <h1 class="headings body-margin" style="width:60%">
+              We are so glued to our screens all day everyday, and we crave for social interaction. Is there a solution that helps solve both the problems together?
+            </h1>
+            <br>
+            <p class="section-titles body-margin">The Solution</p>
+            <h1 class="headings body-margin" style="width:60%">
+              A new social media platform for bite-sized audio posts.
+            </h1>
+            <p class="body-margin" style="width:60%">Oddio provides novel interactions by leveraging hands-free experience and focusing on listening behaviors. In the mean time, we designed speculatively in response to the rise of wireless earbuds and smart home devices.
+            </p>
+            <br>
+            <video src="assets/oddio/oddio-color.mp4" controls poster="assets/oddio/video-cover.png">
+            </video>
         </div>
-    </div>
+
+
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Scenarios</p>
+            <br>
+            <h1 class="headings body-margin" style="width:70%">
+              Oddio liberates users from screen fatigue, and help them stay connected with their friends at any time
+            </h1>
+            <div class="body-margin" style="margin-top:50px;" >
+              <img style="display: inline-block;"src="assets/oddio/icon1.png" alt="">
+              <p style="display: inline-block;"><b>In Commute</b> </p>
+            </div>
+            <div class="body-margin" style="margin-top:50px;" >
+                <img style="display: inline-block;"src="assets/oddio/icon3.png" alt="">
+                <p style="display: inline-block;"><b>Working Out</b> </p>
+            </div>
+            <div class="body-margin" style="margin-top:50px;" >
+                  <img style="display: inline-block;"src="assets/oddio/icon1.png" alt="">
+                  <p style="display: inline-block;"><b>Doing Chores</b> </p>
+            </div>
+
+
+        </div>
+
+        <!-- DESIGN PRESENTATION -->
+        <div class="content-sections">
+          <p class="section-titles body-margin">Conceptual Feed Model</p>
+            <img style="width:100%;margin-top:50px;" src="assets/oddio/model.png" alt="">
+        </div>
+
+        <div class="content-sections">
+          <p class="section-titles body-margin">GUI Interface</p>
+          <img class="img-center-L" style="margin-top:50px;" src="assets/oddio/oddio_prototype.png" alt="">
+        </div>
+
+        <div class="content-sections body-margin">
+          <p class="section-titles">Literature Review </p>
+          <br>
+          <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+            <div>
+              <img src="assets/oddio/LitReview.png" alt="">
+            </div>
+            <div>
+              <h1 class="headings">Research shows that audio networks has great potential in the existing space. </h1>
+              <p >We conducted a comprehensive literature review of audio social meida focused scholar papers to study the proven values, user interactions, and accessibilities of audio networks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SURVEY -->
+        <div class="content-sections body-margin">
+          <p class="section-titles">Online Survey</p>
+          <br>
+          <h1 class="headings" style="width:60%;margin-top:100px;">
+            97.3% of our survey participants say they multitask when listening to audio
+          </h1>
+          <img style="z-index:-1; margin-top:-300px; width:100%" src="assets/oddio/survey.png" alt="">
+        </div>
+
+        <!-- SPEED DATING -->
+        <div class="content-sections body-margin">
+          <p class="section-titles">Storyboarding & Speed Dating</p>
+          <br>
+          <h1 class="headings" style="width:60%;margin-top:50px;">
+            “I want to interact with my friends through audio threads.”
+          </h1>
+          <h1 class="headings" style="width:60%;margin-top:50px;">
+            “I’m afraid of making embarrasing mistakes without visual supplements”
+          </h1>
+
+          <p style="width:60%;margin-top:50px;">We used storyboards to explore people’s attitudes towards different audio contents and their reactions to several novel interactions, such as gesture control and voice conmmands. </p>
+          <img src="assets/oddio/oddio_storyboards" alt="">
+          <img class="img-center-L" src="assets/oddio/oddio_storyboards.png" alt="">
+        </div>
+
+        <!-- TESTING -->
+        <div class="content-sections">
+          <p class="section-titles body-margin">Prototyping & Testing</p>
+          <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+            <div>
+              <img style="margin-top:50px;" src="assets/oddio/testing.png" alt="">
+            </div>
+            <div>
+              <p style="margin-top:50px;margin-left:50px;width:85%;">We used “Wizard of Oz” method to conduct remote user testing (due to COVID-19). By using pre-recorded soundtracks, we were able to give participants audio feedback per screen interaction. The testing results gave us great ingishts to iterate.</p>
+              <a href="assets/oddio/Hu_Final_Research_Report.pdf" target="_blank">
+              <button style="margin-top:50px;margin-left:50px;" class="uk-button uk-button-danger uk-button-large">Research Report</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- TEAM -->
+          <div class="content-sections">
+            <p class="section-titles body-margin">The Team</p>
+            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+              <div>
+                <img style="margin-top:50px;" src="assets/oddio/team.png" alt="">
+              </div>
+              <div>
+                <h1 class="headings" style="width:60%;margin-top:50px;margin-left:50px;">
+                  Things that I learned from working remote:
+                </h1>
+                <p style="margin-left:50px;">~ Over-communication is the key 🔑</p>
+                <p style="margin-left:50px;">~ Be supportive and accountable for each other</p>
+
+              </div>
+          </div>
+        </div>
+
+
+        <!-- PROJECT CONTENT END DIV -->
     </div>
 
-    <!-- My Custom Javascript -->
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>
+    <br>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

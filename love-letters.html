@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-172742333-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172742333-1');
+    </script>
 
     <title>JACKIE HU | DESIGNER</title>
 
@@ -19,10 +22,9 @@
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/about/Ellipse_S.png" />
-    <link rel="apple-touch-icon" href="assets/about/Ellipse_S.png">
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
     <!-- My Custom CSS Styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,316 +32,125 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
 
     <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-
-    <!-- Bootstrap --->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
- <!-- AJAX --->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-
 </head>
 
 <body>
-    <nav id="left-col">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          menu
-      </span>
-        <div class="nav-container">
-            <img class="nav-img" src="assets/about/Ellipse-cut.png" alt="">
-            <div class="text-block">
-                <!-- <div class="side-bar-container"> -->
-                <a class="home-link" href="index.html">
-                    <h2 class="name">JACKIE HU</h2>
-                </a>
-                <!-- <p class="tagline">Designer. Artist. Researcher.</p> -->
-                </div>
+  <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">
+                  <img style="padding:20px;"src="assets/about/logo-home.png" alt="">
+                </a></li>
 
-                <div class="sidebar" id="js-menu">
-                    <ul class="uk-nav uk-nav-default">
-                        <li><a href="ux.html">Product Design</a></li>
-                        <li class="uk-active"><a href="creative-coding.html">Creative Coding</a></li>
-                        <li><a href="street.html">Photography</a></li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#"><p> UX DESIGN</p></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="discover.html"><p>APP ASSIST</p></a></li>
+                            <li><a href="alora.html"><p>ALORA</p></a></li>
+                            <li><a href="nba.html"><p>NBA QMQ</p> </a></li>
+                            <li><a href="oddio.html"><p>ODDIO</p> </a></li>
+                            <li><a href="cui-food.html"><p> REMEMBER IT</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><p>CODING</p></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-active"><a href="love-letters.html"><p>LOVE LETTERS</p></a></li>
+                          <li><a href="camus.html"><p>CAMUS</p></a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li><a href="assets/about/JackieHu-CMUMHCI.pdf"  target="_blank"><p>RESUME</p></a></li>
+            </ul>
         </div>
     </nav>
-    <div class="right-col">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-collapse" uk-grid>
-                <!-- Main Content -->
-                <div class="uk-width-5-5@m">
-                    <div class="content">
-                        <!-- <div class="content-container"> -->
+    <!-- END NAV -->
 
-                        <img class="project-covers" src="assets/projects/love-letters/letter-cover.png" alt="">
-                        <div class="description-container">
-                            <h4 class="titles">Love Letters | Generative Computer Art <br>NYU Interactive Media Arts Undergraduate Capstone Project</h4>
-                            <p><b>Individual Work</b>
-                                <br>
-                                <b>Time:</b> 4 months | 2019 <br>
-                                <b>Toolkit:</b> P5.JS, IBM Tone Analyzer <br>
-                                <b>Context:</b> Interactive Media Arts, New York University Shanghai</p>
+    <!-- PROJETC CONTENT -->
+    <div class="project-content">
+      <img style="width:100%" src="assets/love-letters/letter-cover.png" alt="">
+      <h1 class="headings body-margin">Love Letters
+      </h1>
+      <div class="role-time-team-container">
+          <p class="role-time-team body-margin"> <b>Individual Work</b> </p>
+          <p class="role-time-team body-margin"><b>Timeline</b> <br>4 Months | 2019</p>
+          <p class="role-time-team body-margin"><b>Toolkit</b> <br>P5.JS, IBM Tone Analyzer</p>
+          <p class="role-time-team body-margin"><b>Context</b> <br>Interactive Media Arts Capstone, New York University Shanghai</p>
 
-                            <br>
-                            <br>
-                            <div class="project-details">
-                                <h4 class="sub-titles">Artist Statement</h4>
-                                <p><i>Unrequited love. Failed romance. The people we never belonged to. The dreams we were obsessed with. </i> </p>
-                                <p>In April 2018, I sent a post on the Internet and asked people to send me what they want to tell their loved ones but never started writing anonymously. The receivers can be a person, a city, and can be an unforgettable
-                                    experience.</p>
-                                <!-- <img src="assets/projects/love-letters/ima_show.jpg" alt=""> -->
-                                <p>Later, from ten anonymous love letters I collected, I created a series of generative graphic design prints, putting the orginal texts in parallel with the visualizations. They were first run by a sentimental tone analyzer,
-                                    outputting the emotions read by computers. With the results, I coded them into generative graphics by certain design principles, giving each letters their unique meanings.</p>
-                                    <video class="center" src="assets/projects/love-letters/p5-love-letters.mp4" autoplay loop>
-                                      </video>
-                                <!-- the mediums -->
-                                <br>
-                                <br>
-                                <br>
-                                <h4 class="sub-titles">The Mediums</h4>
-
-                                <p>A book.</p>
-                                <p>An exhibition.</p>
-                                <p>An Interactive experience running on the Internet.</p>
-                                <img class="project-img-m" src="assets/projects/love-letters/square.png" alt="">
-                                <img class="project-img-m" src="assets/projects/love-letters/letters-floor.png" alt="">
-                                <img class="project-img-m" src="assets/projects/love-letters/me_letters.jpg" alt="">
-
-
-                                <br>
-                                <br>
-                                <br>
-                                <h4 class="sub-titles">Project Website</h4>
-                                <p><em> <a href="https://love-letters.github.io/" target="_blank">https://love-letters.github.io/</a> </em> </p>
-
-                                <!-- <img src="assets/projects/love-letters/me_letters.jpg" alt=""> -->
-
-                                <!-- Color Manual -->
-                                <!-- <br>
-                                <br>
-                                <h4 class="sub-titles">Color Manual</h4>
-                                <br>
-                                <img class="project-img-small" src="assets/projects/love-letters/color-manual.png" alt=""> -->
-
-                                <!-- The Letters -->
-                                <!-- <br>
-                                <h4 class="sub-titles">Love Letters</h4>
-                                <br>
-                                <div class="conetent-container">
-
-                                    <div class="row letters-containter" id="letter1">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" scrolling="no" src="https://editor.p5js.org/jackiehu/embed/ibfwiXmqAf"></iframe>
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>001</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“I appreciate you being there for me even we are in different places. I love all the late night calls we had. I remember being super stressed out or having a breakdown and I called you almost crying but was
-                                                always smiley and genuinely happy hanging up. Because seeing your face and knowing how much you love me makes me feel like everything will be okay.
-                                                <br><br> I have never been this happy when I’m with you and I have never been this sad every time we have to say goodbye. I love you even more than I could have imagined. And it’s in this moment of sheer
-                                                sadness that I realized that. Because I find happiness in a lot of other things but this is the first time that I have such a deep understanding of sadness. There are so many things I miss about you: the
-                                                first time you kissed me and every kiss ever since. Your hair, your eyes, your smile. But that will only make me look forward to seeing you again. I love you.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter2">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" scrolling="no" src="https://editor.p5js.org/jackiehu/embed/sA5hOIz1X"></iframe>
-                                      </div>
-
-                                        <div class="col letter-texts">
-                                            <h3>002</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“From time to time, I am blissfully trapped in a solipsistic prison whose bars are made of the thoughts of you. As I accept the universal law that moderaton is more fatal than excess, the little “I” inside my
-                                                head looks at the bars with poise and infatuation as they thicken and thicken, and does nothing – Till the bars at last suffocates and kills the mawkish “I” and turn me into a walking zombie with a perfunctory
-                                                smile.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter3">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/bIAP_hqj7"></iframe>
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>003</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“I never really know what romantic love is before you. I was so used to pain that I almost believed that pain was essential to romantic relationship. It is you who show me the opposite side of love, that I can
-                                                be treasured and valued even with my flaws. We are different like fire and rain; and I can’t be more grateful that understanding and comprise bind us together. Lasting love is the one that cultivated by
-                                                both of us.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter4">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/gO_IPc-bN"></iframe>
-                                      </div>
-
-                                        <div class="col letter-texts">
-                                            <h3>004</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“I don’t know if you’ll ever see this letter. You’ll probably get weird out if you know I have written something like this to you lol. So, I’ve been lying to you, and to myself. I said I’m getting over it, and
-                                                was happy to just be close friends to you. But the truth is, I’m not. I’m not ready to just let you go. I know you probably can tell that I still have strong feelings for you. Do you still have feelings
-                                                for me? Did you already let that feeling in your heart die out, or do you still hold it deep down and try to suppress it?
-                                                <br> No matter how many times you said you just want to be friends with me, the moment when you talk to me, when our hands touch, when we look into each other’s eyes, I can feel clearly there’s still something
-                                                behind that lie of “just wanna be friends”. Are you confused? Why do you want to kill your own feelings? I really wish you could talk to me about this. I really wish I could be with you, even if just for
-                                                one night. I understand your worries about future and everything, but I want to give it a shot.”</p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter5">
-                                      <div class="col p5-sketches">
-                                          <img src="assets/projects/love-letters/letter5-cover.png" alt=""  width="500px">
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>005</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“Dear you,
-                                                <br> This is what you are now: a loose imprint on my skin.
-                                                <br> And right now, I wish nothing more but to make sure you feel the multitudes I feel for the air you give me.
-                                                <br> Even though we have each other in ruins, we know that it is better to have run our hands on the ripples of the Notre Dame or Al-Aqsa than not at all because we know there is nothing that can bring them
-                                                back once they are burning.
-                                                <br> So debris simmering, I puncture a hole in the sky with the remaining spire and minaret and hope that one day the sun will fill it and will drag across the sky with its diamond beams, cutting it, and
-                                                so when I untuck the frayed fabric, the shadow will burst inside the outline I have traced thousands of times, and you will be there.
-                                                <br> When there are days no light branches and I am alone, you whisper holy words to me, and I secure myself between them knowing very well they will flash as instantaneously as the time we have spent while
-                                                our lives were one.
-                                                <br> If only there was an apparatus that could pry the earth in half and magnetize our lives on each slice back together again — but for now, I am stuck here writing this to you while the imprint is lifting
-                                                and the world is still whole and gnawed.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter6">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/TCk4na7Qi"></iframe>
-                                      </div>
-
-                                        <div class="col letter-texts">
-                                            <h3>006</h3>
-
-                                            <p class="love-letters-caption" style="font-size:14px;">“I dislike this school, I am tired of this city, and hate the suffering and torturing of the last four years. It seems like I’d gone through a lot yet achieved nothing. I sobbed under the twelfth floor staircase,
-                                                and drank my tears in the unisex bathroom on the third floor. Out of the haze, I see only your light. In the smog of Shanghai, you are the only bright moonlight and cool breeze, the only sunshine from cold
-                                                rains. Your smile hugs my inconfidence ever-so softly, and your melody melts the coldness in my heart gradually. I really really love you, and I hope you can know that.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter7">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 750px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/EHiVkIUvm"></iframe>
-                                      </div>
-
-                                        <div class="col letter-texts">
-                                            <h3>007</h3>
-
-                                            <p class="love-letters-caption" style="font-size:14px;">“We are not the resonance of the soul, but the attraction of the body, and if this counts as one of the universal gestures of love, then I loved you once. I have looked down upon your soul with pride, and have
-                                                craved for your body in humbleness, though I have not received the utmost pleasure. My love is very shallow, but it’s the only way I know how to love others, and you’re one in a million.” </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter8">
-                                      <div class="col p5-sketches">
-                                          <img src="assets/projects/love-letters/letter8-cover.png" alt="" height="700px" width="500px">
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>008</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“Hello Mom,
-                                                <br> It’s been a while.
-                                                <br> Thinking of you used to be something so unbearable that I would do many things to avoid it. From time to time, grief still nudges me from unprecedented angles, reminding me of what once was.
-                                                <br> As the arrow of time flies further from when you were around, however, it has become a bit easier for me to acknowledge this loss.
-                                                <br> I would like to thank you for all that you did for me. You sacrificed so much for me to have a happy childhood, and for me to be who I am now.
-                                                <br> Also, thank you for the 9 letters you have left behind; while a few remain unopened, from the ones I have read I am learning new things about you and about myself.
-                                                <br> Our days together ended too early, leaving me heartbroken. Yet your presence in the first 16 years of my life has left me inspired.
-                                                <br> As life moves on, I will take every opportunity to love others as I have been loved by you.
-                                                <br> Remembering you always,
-                                                <br> Anonymous”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter9">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/UW8BtXsBX"></iframe>
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>009</h3>
-                                            <p class="love-letters-caption" style="font-size:14px;">“I thought about writing to you hundreds of times during that year. I wrote down hundreds of words and practiced hundreds of times. Yet it never happened. I knew from the beginning that it was gonna end someday.
-                                                But I am sad that it ended in such an accidental way. I didn’t even have a chance to say goodbye, or good luck to you, officially, with a smile.
-                                                <br> You were a fantasy to me. I admired you , looked up to you, learned from you, and most importantly, loved you. But I wasn’t brave enough to tell you that. I was afraid you would be scared away. I wish
-                                                I could have a chance to look into your eyes and say it out loud. Just take a little bit more of my courage.
-                                                <br> I still remember after the last time we met, I wandered around on the Century Avenue. My thought went: “The last thing I want from you is to remember me.” It repeated, repeated, and repeated.
-                                                <br> It is also the reason I want to write this letter. I hope I can always remember you. And when I think of you, I can always be smiling, be strong, and be thankful.”</p>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <div class="row letters-containter" id="letter10">
-                                      <div class="col p5-sketches">
-                                          <iframe style="width: 500px; height: 700px; overflow: hidden;border:none;" src="https://editor.p5js.org/jackiehu/embed/Eh360GFq9"></iframe>
-                                      </div>
-                                        <div class="col letter-texts">
-                                            <h3>010</h3>
-
-                                            <p class="love-letters-caption" style="font-size:14px;">
-                                                <br> "Mr. He,<br> I hope this letter finds you well.
-                                                <br> I was planning to not to talk to you anymore. In my heart, from my pen, and social media – not any more. However, when asked to write a love letter , all I think is about you. I can’t tell anymore if
-                                                writing about you is my habit, or I can’t let go. The thing I regret the most in the past ten years is that I did not give you the love letter I wrote to you. Little did I know that ten years later we do
-                                                not talk to each other anymore.
-                                                <br> So, maybe it was the regret that drove me to tell you my true feelings. In our night-long conversation, the most feeble question was, “why didn’t you tell me earlier?”. No courage. Any possibilities
-                                                between you and I extinguished. Even if I have persuaded myself to stop developing my feelings towards you, in this chaos, you are my only clarity.
-                                                <br> Only that in my confession of the love towards you, I lost you as a friend forever. I don’t wish to put you in an uncomfortable position, especially I’m afraid of disturbing you. And her. Her eyes do
-                                                not illuminate. But if she’s unhappy, you will be unhappy too. So I have never spoken a word at all, not even one word. Yet I’m again afraid. I’m afraid that you will figure out even a little, my longing
-                                                for you. I’m torn. On the one hand, I want to you to think that I have forgotten you; on the other hand, I’m afraid you will think all the words I wrote to you is a joke. But it won’t matter anymore. After
-                                                all, you do not care, and you will not think of me.
-                                                <br> The spring of 2019 is coming to an end, and it is exactly one month till your 22nd birthday. It’s time to say goodbye again. I don’t want to hear from you anymore, but there’s still one corner in my
-                                                heart that is still curious about where you will be heading next. However, I will probably not ask anymore. I’m selfish. I did not manage to make you stay, so I will leave myself.
-                                                <br> I’m doing ok, and sometimes my life still sparkles. I appreciate the tiny warm fragments you left in my memory, and when I’m sad, they remain my medicine. I wonder how your life is going, Mr. He. I
-                                                wish you then to stay healthy, determined, and warm. In your days without me, I hope you can still find happiness, just like your 20 year-old-self sitting on the beach in Dalian.
-                                                <br> Wishing you were forever 18 years old.
-                                                <br> Hoping to think of you less,
-                                                <br> Lulu”
-                                            </p>
-                                        </div> -->
-                                    </div>
-
-                                </div>
-                        <!-- <div class="bottom-nav">
-                            <div class="prev uk-nav uk-nav-default">
-                                <br></br>
-                                <a href="crane.html">PREV ◀️Target Hackathon</a>
-                            </div>
-                            <div class="next uk-nav uk-nav-default">
-                                <br></br>
-                                <a href="camus.html">NEXT ▶️Generative Book Covers</a>
-                            </div>
-                        </div> -->
-                    </div>
-                    <!-- footer -->
-                    <hr style="width:50%;text-align:center; margin-left:25%">
-                    <!-- <img src="assets/about/footer.png" alt=""> -->
-                    <p id="footer_text">Design + Code by Jackie Hu</p>
-                    <img src="assets/about/Ellipse_S.png" id="bottom_ellipse" alt="">
-                </div>
-            </div>
         </div>
+
+
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">Artist Statement</p>
+            <h1 class="headings body-margin">Unrequited love. Failed romance.<br>  The people we never belonged to. The dreams we were obsessed with.
+            </h1>
+
+            <p class="body-margin" style="width:60%">
+              In April 2018, I sent a post on the Internet and asked people to send me what they want to tell their loved ones but never started writing anonymously. The receivers can be a person, a city, and can be an unforgettable experience.
+              <br>
+              Later, from ten anonymous love letters I collected, I created a series of generative graphic design prints, putting the orginal texts in parallel with the visualizations. They were first run by a sentimental tone analyzer, outputting the emotions read by computers. With the results, I coded them into generative graphics by certain design principles, giving each letters their unique meanings.
+             </p>
+
+        </div>
+
+
+
+
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Medium</p>
+            <h1 class="headings body-margin">A book.</h1>
+            <h1 class="headings body-margin">An exhibition.</h1>
+            <h1 class="headings body-margin">An Interactive experience running on the Internet.</h1>
+        </div>
+
+        <div class="content-sections">
+          <img style="width:100%" src="assets/love-letters/hardcover.png" alt="">
+          <img style="width:100%" src="assets/love-letters/letters-wall.png" alt="">
+          <video style="width:100%" src="assets/love-letters/p5-love-letters.mp4" autoplay loop>
+           </video>
+           <img style="width:100%" src="assets/love-letters/me_letters.jpg" alt="">
+
+        </div>
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">Project Website</p>
+
+            <p class="body-margin">
+             <a href="https://love-letters.github.io/" target="_blank">https://love-letters.github.io/</a>
+   </p>
+
+        </div>
+
+
+
+
+        <!-- PROJECT CONTENT END DIV -->
     </div>
 
-    <!-- My Custom Javascript -->
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>    <br>
+
+
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

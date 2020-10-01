@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172742333-1');
+    </script>
+
+    <title>JACKIE HU | DESIGNER</title>
+
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Helvetica:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
+    <!-- My Custom CSS Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Library CSS-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+
+    <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">
+                  <img style="padding:20px;"src="assets/about/logo-home.png" alt="">
+                </a></li>
+
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#"><p> UX DESIGN</p></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="discover.html"><p>APP ASSIST</p></a></li>
+                            <li><a href="alora.html"><p>ALORA</p></a></li>
+                            <li><a href="nba.html"><p>NBA QMQ</p> </a></li>
+                            <li><a href="oddio.html"><p>ODDIO</p> </a></li>
+                            <li class="uk-active"><a href="cui-food.html"><p> REMEMBER IT</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <a href="#"><p>CODING</p></a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li><a href="love-letters.html"><p>LOVE LETTERS</p></a></li>
+                          <li><a href="camus.html"><p>CAMUS</p></a></li>
+                      </ul>
+                  </div>
+                </li>
+                <li><a href="assets/about/JackieHu-CMUMHCI.pdf"  target="_blank"><p>RESUME</p></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- PROJETC CONTENT -->
+    <div class="project-content">
+        <div style="margin-top:150px;">
+            <h1 class="headings body-margin" style="width:60%">Remember it: A voice assistant for family recipes and memories</h1>
+            <div class="role-time-team-container">
+                <p class="role-time-team body-margin"> <b>My Role</b> <br>CUI & GUI Designer</p>
+                <p class="role-time-team body-margin"><b>Timeline</b> <br>4 weeks | 2020</p>
+                <p class="role-time-team body-margin"><b>Team</b> <br>Sarah Pearman, Laura Fulton, Angelina Thomas</p>
+            </div>
+
+            <img style="z-index:-1; margin-top:-600px; margin-left: 50%;width:50%" src="assets/cui-food/cui_cover.png" alt="">
+
+        </div>
+
+        <!-- OVERVIEW AND CONTEXT -->
+        <div class="content-sections context-container">
+            <p class="context"><b>Design Brief: </b>Build a conversation that contains each of these subtasks: Remember, Tell Me, and Show Me. Consider the context and users you are designing for and bring in the very human elements of time and memory, given the limitations
+                of text, limitation of text, utterances, and spreadsheets for capturing enough for a CUI to access and use in repeated interactions with the same user. </p>
+        </div>
+
+
+        <div class="content-sections">
+            <p class="section-titles body-margin">The Challenge</p>
+            <h1 class="headings body-margin">
+              Food is more than the taste of it.
+              <br>
+              It’s about the people and the memories we share.
+            </h1>
+            <p class="body-margin">In this project, our team aims to:
+                <br>1) Transit family recipes from physical to auditory format;
+                <br>2) Capture memories associated with recipes to preserve stories for generations to come
+            </p>
+            <br>
+
+        </div>
+
+
+
+        <div class="content-sections body-margin">
+            <p class="section-titles">User Persona</p>
+            <div style="margin-top:50px;" class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <img src="assets/cui-food/persona-cooking.png" alt="">
+                </div>
+                <div>
+                    <p>Food has always been important for Lisa’s family, and she wants to save as many family recipes as she can. She also wants to make sure she doesn’t forget the stories and memories attached to those foods and the special family gatherings
+                        where those foods were eaten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-sections body-margin">
+            <p class="section-titles">Voiceflow Demo</p>
+            <p style="width:50%">Listen to a clip of our demo and learn how our voice assistant recommends food for family events and recollecting memories. </p>
+            <audio controls>
+  <source src="assets/cui-food/audio-demo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+        </div>
+
+        <div class="content-sections body-margin">
+            <p class="section-titles">GUI Interface</p>
+            <div style="margin-top:50px;" class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <p>We created minimal GUI to assit and enhance users’ cooking experience. Adaptative on smart watch and mobile ends.</p>
+                </div>
+                <div>
+                    <video src="assets/cui-food/cui-watch.mp4" autoplay muted loop>
+            </div>
+
+          </div>
+          </div>
+
+        <div class="content-sections body-margin">
+          <p class="section-titles">Design Principles </p>
+          <h1 class="headings">
+            Making Natural Conversations...
+          </h1>
+          <p><b>Switch tones. </b>Use a different voice to share a piece of memory as if it was the person telling his/her personal story </p>
+          <p><b>Apply the 4 modes of conversations </b>(controlling, guiding, delegating, and collaborating) based on the paper “What is conversation?” written by Hugh Dubberly and Paul Pangaro inthe script.</p>
+
+          <br>
+          <div uk-filter="target: .js-filter">
+                                    <!-- filters -->
+                                    <ul class="uk-subnav uk-subnav-pill">
+                                        <li class="uk-active" uk-filter-control="[data='delegating']"><a href="#">delegating</a></li>
+                                        <li uk-filter-control="[data='collaborating']"><a href="#">collaborating</a></li>
+                                        <li uk-filter-control="[data='guiding']"><a href="#">guiding</a></li>
+                                        <li uk-filter-control="[data='controlling']"><a href="#">controlling</a></li>
+
+                                    </ul>
+                                    <!-- filtered contents -->
+                                    <ul class="js-filter">
+
+                                        <!-- collaborating -->
+                                        <p data="collaborating" class="uk-margin-small quote-sidebar">User and CUI find out want food to prepare for guests together</p>
+                                        <img data="collaborating" class="uk-margin-small img-center-L" src="assets/cui-food/cl.png">
+
+                                        <!-- guiding -->
+                                        <p data="guiding" class="uk-margin-small quote-sidebar">User teaches the CUI a new recipe step by step</p>
+                                        <img data="guiding" class="uk-margin-small img-center-L" src="assets/cui-food/guiding.png">
+
+                                        <!-- controlling -->
+                                        <p data="controlling" class="uk-margin-small quote-sidebar">CUI completes the task that user ask for</p>
+                                        <img data="controlling" class="uk-margin-small img-center-L" src="assets/cui-food/controlling.png">
+
+                                        <!-- delegating -->
+                                        <p data="delegating" class="uk-margin-small quote-sidebar">User specifys the goal(cook something contains eggs), and the CUI decides how to achieve it</p>
+                                        <img data="delegating" class="uk-margin-small img-center-L" src="assets/cui-food/delegating.png">
+                                    </ul>
+                                </div>
+                              </div>
+
+          <div class="content-sections body-margin">
+            <h1 class="headings">
+            ...but also letting computers understand you
+            </h1>
+            <p>In each speech block, user’s inputs are broken down into intents, utterances and slots for the program to process. Intents are user’s goals, utterances are specific ways to phrase one intent, and slots are additional variables
+                                    for the program to understand the information. Here are some examples:
+            </p>
+
+            <br>
+            <table class="uk-table uk-table-middle" >
+                                    <thead>
+                                          <tr>
+                                              <th class="uk-width-medium">Intents</th>
+                                              <th>Utterances & Slots</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td style="font-family: Helvetica-Light">cook for family events</td>
+                                              <td style="font-family: Helvetica-Light">I want to cook for <em>{fam_event}</em>
+                                                  <br>What is a good recipe for <em>{fam_event}</em>
+                                                  <br>I want to prepare food for <em>{fam_event}</em>
+                                                  <br>can you find me a recipe for <em>{fam_event}</em>
+
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td style="font-family: Helvetica-Light">pick a recipe with X ingredient</td>
+                                              <td style="font-family: Helvetica-Light">pick a recipe that has <em>{ingredientType}</em> in it
+                                                  <br>can you pick a recipe for me that has <em>{ingredientType}</em> in it
+                                                  <br>i want a recipe with <em>{ingredientType}</em> in it
+                                                  <br>find a recipe with <em>{ingredientType}</em> in it
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td style="font-family: Helvetica-Light">add a recipe</td>
+                                              <td style="font-family: Helvetica-Light">save a new recipe
+                                                  <br>record a new recipe
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+
+          </div>
+
+          <div class="content-sections body-margin">
+            <h1 class="headings">
+              Store and retrive data:
+              <br>The way that machines remember your memory
+            </h1>
+            <br>
+            <p>We solved the memory problem using Google Sheets.</p>
+            <video src="assets/cui-food/store-nosound.mp4" autoplay muted loop>
+          </div>
+
+          <div class="content-sections body-margin">
+            <p class="section-titles">What Can Be Improved</p>
+            <br>
+            <p>~ Due to the limitations of speech recognition, we have to keep the user’s reply short and concise. It might not be the case in real life interaction.
+</p>
+
+<p>~ Conduct user testings to evaluate the CUI’s ability in coping with errors for more iterations.</p>
+          </div>
+
+
+
+
+
+        <!-- PROJECT CONTENT END DIV -->
+    </div>
+
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>
+    <br>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

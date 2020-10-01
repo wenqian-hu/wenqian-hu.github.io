@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172742333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-172742333-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172742333-1');
+    </script>
 
     <title>JACKIE HU | DESIGNER</title>
 
@@ -20,9 +23,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
-    <link rel="icon" type="image/png" href="assets/about/Ellipse_S.png" />
-    <link rel="apple-touch-icon" href="assets/about/Ellipse_S.png">
-
+    <link rel="icon" type="image/png" href="assets/about/icon.png" />
+    <link rel="apple-touch-icon" href="assets/about/icon.png">
     <!-- My Custom CSS Styles-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,291 +32,197 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
 
     <!-- Javascript Libraries-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-    <nav id="left-col">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            menu
-        </span>
+    <!-- NAVIGATION -->
+    <nav class="uk-dark" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="index.html">
+                        <img style="padding:20px;" src="assets/about/logo-home.png" alt="">
+                    </a>
+                </li>
 
-        <div class="nav-container">
-            <img class="nav-img" src="assets/about/Ellipse-cut.png" alt="">
-            <div class="text-block">
-                <!-- <div class="side-bar-container"> -->
-                <a class="home-link" href="index.html">
-                    <h2 class="name">JACKIE HU</h2>
-                </a>
-                </div>
-                <div class="sidebar" id="js-menu">
-                    <ul class="uk-nav uk-nav-default">
-                        <li><a href="ux.html">Product Design</a></li>
-                        <li><a href="creative-coding.html">Creative Coding</a></li>
-                        <li><a href="street.html">Photography</a></li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav" style="padding-right:20px;">
+                <li>
+                    <a href="#">
+                        <p> UX DESIGN</p>
+                    </a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li>
+                                <a href="discover.html">
+                                    <p>APP ASSIST</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="alora.html">
+                                    <p>ALORA</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nba.html">
+                                    <p>NBA QMQ</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="oddio.html">
+                                    <p>ODDIO</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cui-food.html">
+                                    <p> REMEMBER IT</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>CODING</p>
+                    </a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li>
+                                <a href="love-letters.html">
+                                    <p>LOVE LETTERS</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="camus.html">
+                                    <p>CAMUS</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="assets/about/JackieHu-CMUMHCI.pdf" target="_blank">
+                        <p>RESUME</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
+    <!-- END NAV -->
 
-    <div class="right-col">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-collapse right-body" uk-grid>
+    <!-- INTRODUCTION -->
 
-                <!-- discover student Loans -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="mhci-capstone.html">
-                            <img class="cover-spacing" src="assets/projects/discover/capstone-cover-thumb.jpg">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <!-- <div class="uk-card uk-card-default uk-card-body content-cards"> -->
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="mhci-capstone.html">
-                            Design for Fintech: Bridging the Resource Gap in Student Loans
-                        </a>
-                        </h3>
-                        <p><i>Product(UX) Designer</i> </p>
-                        <p class="tags">#Design Thinking #User Research #Interface Desgin #Client Work</p>
-                    </div>
-                </div>
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+        <div class="blob">
+            <iframe src="https://editor.p5js.org/jackiehu/embed/9kTbkhEw-" width="520px" height="600"></iframe>
+        </div>
+        <div>
+            <div class="introduction">
+                <h1 class="headings">JACKIE HU</h1>
+                <h1 class="headings">I am a Designer.</h1>
+                <!-- <p>Designer who research and create art. </p> -->
 
-              <!-- Alora -->
-              <div class="uk-width-2-3@s">
-                  <div class="content-cards">
-                      <a href="alora.html">
-                          <img class="cover-spacing" src="assets/projects/alora/alora_cover.jpg">
-                      </a>
-                  </div>
-              </div>
-              <div class="uk-width-1-3@s">
-                  <!-- <div class="uk-card uk-card-default uk-card-body content-cards"> -->
-                  <div class="content-cards">
-                      <h3 class="home-titles">
-                        <a href="alora.html">
-                        Alora: Chrome extension that protects your online data privacy
-                      </a>
-                      </h3>
-                      <p><i>Product(UX) Designer</i> </p>
-                      <p class="tags">#User Research #Web + Logo Design</p>
-                  </div>
-              </div>
-
-              <!-- Love Letters -->
-              <div class="uk-width-2-3@s">
-                  <div class="content-cards">
-                      <a href="love-letters.html">
-                          <img class="cover-spacing" src="assets/projects/love-letters/letter-cover.png" alt="">
-                      </a>
-                  </div>
-              </div>
-              <div class="uk-width-1-3@s">
-                  <div class="content-cards">
-                      <h3 class="home-titles">
-                      <a href="love-letters.html">
-                        Love Letter: New York University Shanghai Interactive Media Arts Undergraduate Capstone Project
-                      </a>
-                      </h3>
-                      <p><i>Individual Work</i> </p>
-                      <p class="tags">#Generative Art #Design Systems #Data Visualizations</p>
-                  </div>
-              </div>
-
-
-              <!-- oddio -->
-              <div class="uk-width-2-3@s">
-                  <div class="content-cards">
-                      <a href="oddio.html">
-                          <img class="cover-spacing" src="assets/projects/oddio/cover-thumb.jpg">
-                      </a>
-                  </div>
-              </div>
-              <div class="uk-width-1-3@s">
-                  <div class="content-cards">
-                      <h3 class="home-titles">
-                        <a href="oddio.html">
-                        Oddio: A new audio-based social network with a seamless, endless feed
-                        </a>
-                      </h3>
-                      <p><i>Experience Designer</i> </p>
-                      <p class="tags">#Social Media #Voice Interaction #Speculative Design</p>
-
-                  </div>
-              </div>
-
-
-
-                <!-- remember it -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="cui-recipe.html">
-                            <img class="cover-spacing" src="assets/projects/cui-recipe/rememberme-cover.jpg">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <!-- <div class="uk-card uk-card-default uk-card-body content-cards"> -->
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="cui-recipe.html">
-                          Remember it: A voice assistant for family recipes and memories
-                          </a>
-                        </h3>
-                        <p><i>Conversational Designer</i> </p>
-                        <p class="tags">#Conversational Design #Graphical User Interface(GUI)</p>
-                    </div>
-                </div>
-
-
-                <!-- paper crane -->
-                <!-- <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="crane.html">
-                            <img class="cover-spacing" src="assets/projects/paper-crane/paper-crane-thumb.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="crane.html">
-                            Target Hackathon: Build quality communiation between migrant parents and left-behind children
-                          </a>
-                        </h3>
-                        <p><i>Product(UX) Designer</i> </p>
-                        <p>Design Thinking, User Research, Interface Desgin, Hackathon</p>
-                    </div>
-                </div> -->
-
-
-
-                <!-- Camus -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="camus.html">
-                            <img class="cover-spacing" src="assets/projects/camus-covers/the-stranger-thumb.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="camus.html">
-                            Generative Book Covers for Albert Camus
-                          </a>
-                        </h3>
-                        <p><i>Individual Work</i> </p>
-                        <p class="tags">#Generative Art #Design Systems #Book Cover Design #Undergraduate Coursework</p>
-                    </div>
-                </div>
-
-                <!-- NBA QMQ -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="nbaqmq.html">
-                            <img class="cover-spacing" src="assets/projects/nba/cover.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="nbaqmq.html">
-                            AKQA Shanghai: NBA QMQ (Fan Circle)
-                          </a>
-                        </h3>
-                        <p><i>UX Design Intern</i> </p>
-                        <p class="tags">#User Interface Design #Responsive Web #Client Work</p>
-                    </div>
-                </div>
-
-                <!-- IoT -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="send-love.html">
-                            <img class="cover-spacing" src="assets/projects/love/cover-thumb-crop.png" alt="">
-                        </a>
-
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="send-love.html">
-                            Send Love IoT: How to make long-distance communication tangible?
-                          </a>
-                          </h3>
-                        <p><i>Individual Work</i> </p>
-                        <p class="tags">#Physical Computing #API #Web App #Internet of Things(IoT) #Undergraduate Coursework</p>
-                    </div>
-                </div>
-
-                <!-- Leap Motion -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="starry-night.html">
-                            <img class="cover-spacing" src="assets/projects/stars/cover-thumb.jpg" alt="">
-                        </a>
-
-
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="starry-night.html">
-                          Starry Night: Interactive Constellation with Hand Tracking
-                          </a>
-                        </h3>
-                        <p><i>Designer, Prototyper</i> </p>
-                        <p class="tags">#Leap Motion #Processing #Virtual Reality #Undergraduate Coursework</p>
-                    </div>
-                </div>
-
-                <!-- Photography -->
-                <div class="uk-width-2-3@s">
-                    <div class="content-cards">
-                        <a href="street.html">
-                            <img class="cover-spacing" src="assets/images/street/001-thumb.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@s">
-                    <div class="content-cards">
-                        <h3 class="home-titles">
-                          <a href="street.html">
-                          Film Photography
-                          </a>
-                        </h3>
-                        <p><i>Photographer</i> </p>
-                        <!-- <p>Serendipitous discoveries when travelling around the world</p> -->
-                    </div>
-                </div>
-
-
+                <p>
+                    As technology constantly shapes, modifies, and revolutionizes our cultures, I believe that designers have the mission to make meaningful design decisions and always put people at the heart ❤️ of our work.</p>
+                <p>Master’s of Human-Computer Interaction @ CMU
+                    <br>B.S. Interactive Media Arts @ NYU </p>
+                <p>Work Contact: jackiehu.design@gmail.com</p>
+                <a style="margin-right:10px;" href="https://www.linkedin.com/in/jackiehu-design/" target="_blank" uk-icon="icon: linkedin"></a>
+                <a style="margin-right:10px;" href="https://dribbble.com/jackiehu_" target="_blank" uk-icon="icon: dribbble"></a>
+                <a style="margin-right:10px;" href="https://www.instagram.com/filmaulait/" target="_blank" uk-icon="icon: instagram"></a>
+                <a style="margin-right:10px;" href="https://github.com/wenqian-hu" target="_blank" uk-icon="icon: github"></a>
 
             </div>
-            <!-- footer -->
-            <hr style="width:50%;text-align:center; margin-left:25%">
-            <!-- <img src="assets/about/footer.png" alt=""> -->
-            <p id="footer_text">Design + Code by Jackie Hu</p>
-            <img src="assets/about/Ellipse_S.png" id="bottom_ellipse" alt="">
-
         </div>
+    </div>
 
+    <!-- WORKS -->
+
+    <div class="works-row works-row-1">
+        <h1 class="headings">WEB DESIGN</h1>
+        <h1 class="sub-headings">Design is Thinking Made Visual</h1>
+        <br>
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <a href="discover.html">
+                    <img class="home-covers" src="assets/homepage/discover.jpg" alt="">
+                    <div class="animation">
+                      <div class="cover-texts">
+                        AppAssist
+                      </div>
+                    </div>
+                </a>
+
+            </div>
+            <div>
+                <a href="alora.html">
+                    <img class="home-covers" src="assets/homepage/alora.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="nba.html">
+
+                    <img class="home-covers" src="assets/homepage/nba.png" alt="">
+                </a>
+            </div>
+        </div>
     </div>
 
 
+    <div class="works-row works-row-2">
+        <div class="uk-child-width-expand@s" uk-grid>
+            <div>
+                <h1 class="headings">VUI / CUI</h1>
+                <h1 class="sub-headings">Designing for Conversations</h1>
+            </div>
+            <div>
+                <a href="oddio.html">
+                    <img class="home-covers" src="assets/homepage/oddio.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="cui-food.html">
+                    <img class="home-covers" src="assets/homepage/cui-food.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <!-- My Custom Javascript -->
+    <div class="works-row works-row-3">
+        <div class="uk-child-width-expand@s" uk-grid>
+            <div>
+                <h1 class="headings">CREATIVE CODING</h1>
+                <h1 class="sub-headings">Programming as Art</h1>
+            </div>
+            <div>
+                <a href="love-letters.html">
+                    <img class="home-covers" src="assets/homepage/lovelettershome.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="camus.html">
+                    <img class="home-covers" src="assets/homepage/camus-home.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <hr style="width:50%;text-align:center; margin-left:auto;margin-right:auto">
+    <span><p id="footer_text">Design + Code by Jackie Hu</p>
+    <img src="assets/about/logo-home.png" id="bottom_logo" alt="">
+    </span>
+    <br>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
