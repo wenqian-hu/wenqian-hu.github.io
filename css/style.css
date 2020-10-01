@@ -102,7 +102,8 @@ body{
 
 p {
   font-family:"Helvetica-Light";
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.3em;
 }
 
 .project-content{
@@ -262,6 +263,14 @@ line-height: 1.5em
   }
   .introduction{
     margin-top: 10px;
+  }
+  .body-margin{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .content-sections{
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
 
