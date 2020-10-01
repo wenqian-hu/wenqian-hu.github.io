@@ -245,12 +245,24 @@ line-height: 1.5em
   .headings{
     font-size:30px;
   }
+  #sketch-div{
+    display: none;
+  }
+  .uk-navbar-right{
+    visibility: hidden;
+    display: none;
+  }
 
 
  }
 @media all and (max-width: 575px) {
-  #sketch-div{
-    display: none;
+  .uk-navbar-left{
+    visibility: visible;
+    display:contents;
   }
+  .introduction{
+    margin-top: 10px;
+  }
+
 
 }
