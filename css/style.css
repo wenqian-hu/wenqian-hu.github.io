@@ -247,12 +247,25 @@ line-height: 1.5em
   .headings{
     font-size:30px;
   }
+  .sub-headings{
+    font-size:24px;
+  }
+  .introduction{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 0px;
+  }
   #sketch-div{
     display: none;
   }
   .uk-navbar-right{
     visibility: hidden;
     display: none;
+  }
+  .works-row{
+    margin-bottom: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
 
@@ -262,17 +275,7 @@ line-height: 1.5em
     visibility: visible;
     display:contents;
   }
-  .introduction{
-    margin-top: 10px;
-    margin-left: 50px;
-    padding: 0px;
-  }
   .body-margin{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .works-row{
-    margin-bottom: 80px;
     margin-left: 50px;
     margin-right: 50px;
   }
