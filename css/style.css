@@ -138,14 +138,19 @@ p {
   width:60%;
 }
 
+.logo-nav{
+  width:60px;
+  height:auto;
+  position: absolute;
+  margin-left:50px;
+  /* margin-top: 10px; */
+}
+
 .context{
 position: relative;
 padding-left: 1em;
 border-left: 0.2em solid;
 line-height: 1.5em
-
-
-
 }
 
 .img-center-M{
@@ -282,10 +287,10 @@ line-height: 1.5em
 
  }
 @media all and (max-width: 575px) {
-  .uk-navbar-left{
+  /* .uk-navbar-left{
     visibility: visible;
     display:contents;
-  }
+  } */
   .body-margin{
     margin-left: 50px;
     margin-right: 50px;
