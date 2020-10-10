@@ -36,57 +36,7 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-    <script>
-    let kMax; // maximal value for the parameter "k" of the blobs
-let step = 0.01; // difference in time between two consecutive blobs
-let n = 100; // total number of blobs
-let radius = 0; // radius of the base circle
-let inter = 0.05; // difference of base radii of two consecutive blobs
-let maxNoise = 500; // maximal value for the parameter "noisiness" for the blob
-    </script>
-    <script>
-			function setup(){
-				var canvas = createCanvas(windowHeight, windowHeight);
-        canvas.parent('sketch-div');
-        colorMode(HSB, 1);
-	angleMode(DEGREES);
-  noFill();
-	//noLoop();
-	kMax = random(0.6, 1.0);
-	noStroke();
-			}
 
-	function draw(){
-
-   background(0.083);
-  let t = frameCount/100;
-  for (let i = n; i > 0; i--) {
-		let alpha = 1 - (i / n);
-        // print(alpha);
-		fill((alpha/10 + 0.5)%1, 1, 1, alpha);
-		let size = (radius + i * inter)/20;
-		let k = kMax * sqrt(i/n);
-		let noisiness = maxNoise * (i / n);
-    blob(size/5, width*0.65, height/2, k, t - i * step, noisiness);
-  }
-}
-		</script>
-    <script>
-    function blob(size, xCenter, yCenter, k, t, noisiness) {
-      beginShape();
-      let angleStep = 360 / 10;
-      for (let theta = 0; theta <= 360 + 2 * angleStep; theta += angleStep) {
-        let r1, r2;
-        r1 = cos(theta)+1;
-        r2 = sin(theta)+1; // +1 because it has to be positive for the function noise
-        let r = (size + noise(k * r1,  k * r2, t) * noisiness)*0.6;
-        let x = xCenter + r * cos(theta);
-        let y = yCenter + r * sin(theta);
-        curveVertex(x, y);
-      }
-      endShape();
-    }
-    </script>
     <!-- <script src="sketch.js"></script> -->
 </head>
 
@@ -174,20 +124,18 @@ let maxNoise = 500; // maximal value for the parameter "noisiness" for the blob
     <!-- INTRODUCTION -->
 
     <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
-        <div class="blob">
-          <div id="sketch-div"></div>
-            <!-- <iframe src="https://editor.p5js.org/jackiehu/embed/9kTbkhEw-" width="520px" height="600"></iframe> -->
-        </div>
+        <div id="aboutme-img">
+          <img src="assets/about/me.png" alt="">
+          </div>
         <div>
-            <div class="introduction">
-                <h1 class="headings">Jackie Hu</h1>
-                <h1 class="headings">A Cosmopolitan Designer</h1>
-                <!-- <p>Designer who research and create art. </p> -->
-
-                <p>
-                    As technology constantly shapes, modifies, and revolutionizes our cultures, I believe that designers have the mission to make meaningful design decisions and always put people at the heart ❤️ of our work.</p>
-                <p>Master of Human-Computer Interaction @ CMU
-                    <br>B.S. Interactive Media Arts @ NYU </p>
+            <div class="introduction" style="margin-bottom:150px">
+              <h1 class="headings">Jackie Hu</h1>
+              <h1 class="headings">A Cosmopolitan Designer</h1>
+              <p>- - - - -</p>
+              <p>I first study design and art in a cosmopolitan school, where I get to travel and work with people in different countries. My experience teaches me:</p>
+              <p>Good design is a universal lanaguage and a global passport.</p>
+              <p>I spend my time at NYU studying Interactive Media Arts, experimenting with all kinds of emerging technologies. While the digital world is full of treasures, I want to make the experience more accessible, comprehensive, and seamless to people who are using them. That’s how I earned my Master’s degree in Human-Computer Interaction at CMU later on.</p>
+              <p>As technology constantly shapes, modifies, and revolutionizes our cultures, I believe that designers have the mission to make meaningful design decisions and always put people at the heart ❤️ of our work.</p>
                 <p>Work Contact: jackiehu.design@gmail.com</p>
                 <a style="margin-right:10px;" href="https://www.linkedin.com/in/jackiehu-design/" target="_blank" uk-icon="icon: linkedin"></a>
                 <a style="margin-right:10px;" href="https://dribbble.com/jackiehu_" target="_blank" uk-icon="icon: dribbble"></a>
@@ -197,79 +145,6 @@ let maxNoise = 500; // maximal value for the parameter "noisiness" for the blob
             </div>
         </div>
     </div>
-
-    <!-- WORKS -->
-
-    <div class="works-row works-row-1">
-       <h1 class="headings">WEB DESIGN</h1>
-       <h1 class="sub-headings">Design is Thinking Made Visual</h1>
-       <br>
-       <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-           <div>
-               <a href="discover.html">
-                   <img class="home-covers" src="assets/homepage/discover.jpg" alt="">
-                   <div class="animation">
-                     <div class="cover-texts">
-                       AppAssist
-                     </div>
-                   </div>
-               </a>
-
-           </div>
-           <div>
-               <a href="alora.html">
-                   <img class="home-covers" src="assets/homepage/alora.png" alt="">
-               </a>
-           </div>
-           <div>
-               <a href="nba.html">
-
-                   <img class="home-covers" src="assets/homepage/nba.png" alt="">
-               </a>
-           </div>
-       </div>
-   </div>
-
-
-   <div class="works-row works-row-2">
-       <div class="uk-child-width-expand@s" uk-grid>
-           <div>
-               <h1 class="headings">VUI / CUI</h1>
-               <h1 class="sub-headings">Designing for Conversations</h1>
-           </div>
-           <div>
-               <a href="oddio.html">
-                   <img class="home-covers" src="assets/homepage/oddio.png" alt="">
-               </a>
-           </div>
-           <div>
-               <a href="cui-food.html">
-                   <img class="home-covers" src="assets/homepage/cui-food.png" alt="">
-               </a>
-           </div>
-       </div>
-   </div>
-
-   <div class="works-row works-row-3">
-       <div class="uk-child-width-expand@s" uk-grid>
-           <div>
-               <h1 class="headings">CREATIVE CODING</h1>
-               <h1 class="sub-headings">Programming as Art</h1>
-           </div>
-           <div>
-               <a href="love-letters.html">
-                   <img class="home-covers" src="assets/homepage/lovelettershome.png" alt="">
-               </a>
-           </div>
-           <div>
-               <a href="camus.html">
-                   <img class="home-covers" src="assets/homepage/camus-home.png" alt="">
-               </a>
-           </div>
-       </div>
-   </div>
-
-
 
 
 
