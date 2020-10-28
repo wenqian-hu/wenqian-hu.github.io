@@ -2,6 +2,7 @@ ScrollReveal().reveal('.introduction'), { delay: 500,reset: false };
 ScrollReveal().reveal('.works-row-1'), { delay: 500,reset: false };
 ScrollReveal().reveal('.works-row-2', { delay: 500,reset: false });
 ScrollReveal().reveal('.works-row-3', { delay: 500,reset: false });
+ScrollReveal().reveal('.works-row-4', { delay: 500,reset: false });
 ScrollReveal().reveal('.content-sections', { delay: 500,reset: false });
 
 
