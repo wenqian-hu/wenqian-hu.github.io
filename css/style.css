@@ -1,6 +1,6 @@
 /* ::selection {
-    color: white !important;
-    background: black !important;
+    color: white!important;
+    background: white  !important;
 } */
 
 body{
@@ -14,7 +14,7 @@ body{
   font-family: 'Helvetica-Light';
   src:
   /* url('fonts/Lato-Regular.ttf') format('truetype'), */
-  url('fonts/helvetica_light.ttf') format('truetype');
+  url('fonts/HelveticaLt.ttf') format('truetype');
 }
 
 @font-face{
@@ -177,6 +177,7 @@ line-height: 1.5em
 .img-center-XL{
   margin-top: 30px;
   display: block;
+  width:80%;
   margin-left: auto;
   margin-right: auto;;
 }
