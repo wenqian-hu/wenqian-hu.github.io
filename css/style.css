@@ -1,7 +1,7 @@
-/* ::selection {
-    color: white!important;
+::selection {
+    color: black!important;
     background: white  !important;
-} */
+}
 
 body{
   height: 100%; !important
@@ -73,7 +73,16 @@ body{
 .headings{
   font-size: 50px;
   font-weight:bold;
+  /* letter-spacing: 5px; */
   color:white;
+}
+
+.heading-name{
+  font-size: 50px;
+  font-weight:bold;
+  letter-spacing: 5px;
+  color:white;
+
 }
 
 
@@ -85,6 +94,17 @@ body{
 }
 
 .body-margin{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.body-margin-stats{
+  opacity: 60%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.body-margin-stats:hover{
+  opacity: 100%;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -102,7 +122,7 @@ body{
 p {
   font-family:"Helvetica-Light";
   /* font-size: 20px; */
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .project-content{
@@ -121,13 +141,15 @@ p {
   font-family:Helvetica;
   font-style: bold;
   font-size: 24px;
-  color:#FFC9B8;
+  /* color:#FFC9B8; */
+  color:#21ADFC;
   letter-spacing: 3px;
 }
 
 .role-time-team{
   font-family: "Helvetica-Light"
   font-size: 14px;
+  /* letter-spacing: 2px; */
   color:#9A9999;
 }
 
@@ -145,11 +167,11 @@ p {
 }
 
 .logo-nav{
-  width:60px;
+  width:25px;
   height:auto;
   position: absolute;
-  margin-left:50px;
-  /* margin-top: 10px; */
+  margin-left:30px;
+  /* margin-top: -10px; */
 }
 
 .context{
@@ -228,6 +250,14 @@ line-height: 1.5em
   font-size: 16px;
 }
 
+.bottom-signature{
+  text-align: center;
+  opacity: 50%
+}
+.bottom-signature:hover{
+  opacity: 100%
+}
+
 #aboutme-img{
   padding:50px;
 }
@@ -240,18 +270,22 @@ line-height: 1.5em
 
 #footer_text{
   font-size: 16px;
+  letter-spacing: 2px;
   text-align:center;
   background-color:#151515; !important
   margin-bottom: 50px;
-  opacity: 50%;
+  /* opacity: 50%; */
 }
-#footer_text:hover{
-  font-size: 16px;
+
+#footer_text_small{
+  font-size: 12px;
+  letter-spacing: 2px;
   text-align:center;
   background-color:#151515; !important
   margin-bottom: 50px;
-  opacity: 100%;
+
 }
+
 
 #bottom_logo{
   float:left;
@@ -259,6 +293,14 @@ line-height: 1.5em
   margin-top: -55px;
   width:50px;
 }
+
+#sealing-svg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  /* opacity: 50% */
+}
+
 
 
 
@@ -288,10 +330,12 @@ line-height: 1.5em
   #sketch-div{
     display: none;
   }
+
   .uk-navbar-right{
     visibility: hidden;
     display: none;
   }
+
   .works-row{
     margin-bottom: 80px;
     margin-left: 50px;
@@ -309,6 +353,26 @@ line-height: 1.5em
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  .body-margin-stats{
+    opacity: 60%
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .body-margin-stats:hover{
+    opacity: 100%
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .side-projects{
+    opacity: 60%
+  }
+  .side-projects:hover{
+    opacity: 100%
+  }
+
+
   .content-sections{
     margin-top: 50px;
     margin-bottom: 100px;
