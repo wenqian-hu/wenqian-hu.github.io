@@ -103,6 +103,7 @@ body{
   margin-left: 100px;
   margin-right: 100px;
 }
+
 .body-margin-stats:hover{
   opacity: 100%;
   margin-left: 100px;
@@ -165,14 +166,22 @@ p {
   margin-right: auto;
   width:60%;
 }
-
+.uk-navbar-left{
+  margin-top: 15px;
+  margin-left: 15px;
+}
 .logo-nav{
   width:25px;
   height:auto;
-  position: absolute;
-  margin-left:30px;
-  /* margin-top: -10px; */
+  /* margin-left:30px; */
+  margin-right:5px;
 }
+
+.home-nav >img,
+.home-nav >p{
+  display: inline-block;
+}
+
 
 .context{
 position: relative;
@@ -331,6 +340,7 @@ line-height: 1.5em
     display: none;
   }
 
+
   .uk-navbar-right{
     visibility: hidden;
     display: none;
@@ -349,18 +359,19 @@ line-height: 1.5em
     visibility: visible;
     display:contents;
   } */
+
   .body-margin{
     margin-left: 50px;
     margin-right: 50px;
   }
 
   .body-margin-stats{
-    opacity: 60%
+    opacity: 60%;
     margin-left: 50px;
     margin-right: 50px;
   }
   .body-margin-stats:hover{
-    opacity: 100%
+    opacity: 100%;
     margin-left: 50px;
     margin-right: 50px;
   }
