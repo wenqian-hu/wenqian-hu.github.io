@@ -102,13 +102,64 @@ body{
   opacity: 60%;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 30px;
 }
 
 .body-margin-stats:hover{
   opacity: 100%;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 30px;
+
 }
+
+.partner-logo{
+  width: 32px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.newtab-icon{
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 20px;
+  height: auto;
+  color: grey;
+
+}
+
+.zenly-partner-inline{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.zenly-partner-inline-text{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* .zenly-partner-text{
+  margin-left: 100px;
+} */
+
+.zenly-partner-inline >p,
+.zenly-partner-inline>img{
+  display: inline;
+}
+
+.zenly-partner-inline-text >p,
+.zenly-partner-inline-text >img{
+  display: inline;
+}
+
+
+
 
 
 .works-row{
@@ -374,6 +425,30 @@ line-height: 1.5em
     opacity: 100%;
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .zenly-partner-inline{
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .zenly-partner-inline-text{
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .zenly-partner-inline >img,
+  .zenly-partner-inline>p{
+    display: inline;
+  }
+
+  .zenly-partner-inline-text >img,
+  .zenly-partner-inline-text >p{
+    display: inline;
   }
 
   .side-projects{
