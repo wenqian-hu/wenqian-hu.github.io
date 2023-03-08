@@ -46,7 +46,7 @@
     </script>
     <script>
         function setup() {
-            var canvas = createCanvas(windowHeight, windowHeight);
+            var canvas = createCanvas(windowHeight, windowHeight*0.65);
             canvas.parent('sketch-div');
             colorMode(HSB, 1);
             angleMode(DEGREES);
@@ -57,8 +57,8 @@
         }
 
         function draw() {
-
-            background(0.083);
+            // background(0.083);
+            background(0.116);
             let t = frameCount / 100;
             for (let i = n; i > 0; i--) {
                 let alpha = 1 - (i / n);
@@ -94,7 +94,7 @@
 
     <!-- NAVIGATION -->
     <nav class="uk-dark" uk-navbar>
-        <div class="uk-navbar-left uk-navbar-item uk-logo">
+        <div class="uk-navbar-left uk-navbar-item uk-logo ">
             <ul class="uk-navbar-nav">
                 <li>
                     <a href="index.html">
@@ -108,16 +108,31 @@
         </div>
 
         <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav" style="padding-right:20px;">
-                <li>
+            <ul class="uk-navbar-nav " style="padding-right:20px; ">
+                <li >
                     <a href="#">
-                        <p>—— D E S I G N</p>
+                        <p > — product</p>
                     </a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li>
-                                <a href="zenly-your-world.html">
-                                    <p>ZENLY (BY SNAP)</p>
+                                <a href="bff.html">
+                                    <p>BFF</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="go.html">
+                                    <p>GO MODE</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event.html">
+                                    <p>LIVE EVENTS</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="coe.html">
+                                    <p>CENTER OF THE EARTH</p>
                                 </a>
                             </li>
                             <li>
@@ -135,34 +150,29 @@
                                     <p>NBA QMQ</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="oddio.html">
-                                    <p>ODDIO</p>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="cui-food.html">
-                                    <p> REMEMBER IT</p>
-                                </a>
-                            </li> -->
 
                         </ul>
                     </div>
                 </li>
                 <li>
                     <a href="#">
-                        <p>—— C O D I N G</p>
+                        <p>— play</p>
                     </a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li>
+                              <a href="alphabet.html">
+                                  <p>A-Z</p>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://dribbble.com/jackiehu_" target="_blank">
+                                  <p>100 DAYS UI</p>
+                              </a>
+                          </li>
                             <li>
                                 <a href="love-letters.html">
                                     <p>LOVE LETTERS</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="camus.html">
-                                    <p>CAMUS</p>
                                 </a>
                             </li>
                         </ul>
@@ -171,7 +181,7 @@
 
                 <li>
                     <a href="about.html">
-                        <p>—— A B O U T</p>
+                        <p>— about</p>
                     </a>
                 </li>
 
@@ -182,30 +192,32 @@
 
     <!-- INTRODUCTION -->
 
-    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m" uk-grid>
+    <div class=" uk-flex uk-flex-middle  uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m"  uk-grid>
         <div class="blob">
             <div id="sketch-div"></div>
             <!-- <iframe src="https://editor.p5js.org/jackiehu/embed/9kTbkhEw-" width="520px" height="600"></iframe> -->
         </div>
         <div>
             <div class="introduction">
-                <h1 class="heading-name">Jackie Hu</h1>
-                <h1 class="sub-headings">Product Designer</h1>
+                <h1 class="heading-name">Jackie Hu / Product Designer</h1>
+                <!-- <h1 class="sub-headings">Paris-based designer</h1> -->
                 <!-- <p>Designer who research and create art. </p> -->
+                <div class="" style="margin-top:50px;margin-bottom:50px">
+                  <a style="margin-right:10px;" href="https://www.linkedin.com/in/jackiehu-design/" target="_blank" uk-icon="icon: linkedin"></a>
+                  <a style="margin-right:10px;" href="https://dribbble.com/jackiehu_" target="_blank" uk-icon="icon: dribbble"></a>
+                  <a style="margin-right:10px;" href="https://www.instagram.com/filmaulait/" target="_blank" uk-icon="icon: instagram"></a>
+                  <a style="margin-right:10px;" href="https://mobile.twitter.com/itsjackiehu" target="_blank" uk-icon="icon: twitter"></a>
 
-                <p>Currently at Zenly (by Snap Inc.)</p>
+                </div>
+
+                <!-- <p>ex product designer at Zenly (by Snap Inc.) </p>
+                <p>currently looking for full-time based in europe / remote</p>
                 <p>
                     As technology constantly shapes, modifies, and revolutionizes our cultures, I believe that designers have the mission to make meaningful design decisions and always put people at the heart 💙 of our work.</p>
-                <p>Master of Human-Computer Interaction @ CMU
-                </p>
                 <a href="assets/about/JackieHU-ProductDesigner-2022.pdf" target="_blank">
                     <p>Résumé</p>
                 </a>
-                <!-- <p>Work Contact: jackiehu.design@gmail.com</p> -->
-                <a style="margin-right:10px;" href="https://www.linkedin.com/in/jackiehu-design/" target="_blank" uk-icon="icon: linkedin"></a>
-                <a style="margin-right:10px;" href="https://dribbble.com/jackiehu_" target="_blank" uk-icon="icon: dribbble"></a>
-                <a style="margin-right:10px;" href="https://www.instagram.com/filmaulait/" target="_blank" uk-icon="icon: instagram"></a>
-                <a style="margin-right:10px;" href="https://mobile.twitter.com/itsjackiehu" target="_blank" uk-icon="icon: twitter"></a>
+                <p>Work Contact: jackiehu.design@gmail.com</p> -->
 
             </div>
         </div>
@@ -213,87 +225,249 @@
 
     <!-- WORKS -->
     <div class="works-row works-row-1">
-        <h1 class="heading-name">recent work</h1>
-        <h1 class="sub-headings">zenly — a live social map of your close friends</h1>
-
+        <!-- <h1 class="heading-name">recent work</h1> -->
+        <h1 class="sub-headings">design at zenly (by snap. inc)</h1>
+        <p class="uk-text-muted">a live map of your close friends.</p>
         <br>
         <div class="uk-child-width-expand@s" uk-grid>
-            <!-- <div class="uk-width-1-3@m">
-           <h1 class="sub-headings">zenly — a live social map of your close friends</h1>
-         </div> -->
-            <div class="uk-width-expand@m">
-                <a href="zenly-your-world.html">
-                    <img class="home-covers" src="assets/zenly-your-world/zenly.png" alt="">
+            <div>
+                <a href="bff.html">
+                    <img class="home-covers" src="assets/index-2023/bff.png" alt="">
                 </a>
-            </div>
 
+                <!-- Titles -->
+                <a class="uk-link-reset" href="bff.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    BFF & Mutual love
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  celebrate power friendships
+                </p>
+                </a>
+                <!-- End Titles -->
+
+            </div>
+            <div>
+                <a href="go.html">
+                    <img class="home-covers" src="assets/index-2023/go.png" alt="">
+                </a>
+
+                <!-- Titles -->
+                <a class="uk-link-reset" href="go.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    Go Mode
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  in-app navigation
+                </p>
+              </a>
+                <!-- End Titles -->
+            </div>
+            <div>
+                <a href="event.html">
+                    <img class="home-covers" src="assets/index-2023/event.png" alt="">
+                </a>
+
+                <!-- Titles -->
+                <a class="uk-link-reset" href="event.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    Live Events
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  in-app navigation
+                </p>
+                </a>
+                <!-- End Titles -->
+            </div>
+        </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+            <div>
+                <a href="coe.html">
+                    <img class="home-covers" src="assets/index-2023/coe.png" alt="">
+                </a>
+                <!-- Titles -->
+                <a class="uk-link-reset" href="coe.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    Center of the Earth
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  easter egg
+                </p>
+              </a>
+                <!-- End Titles -->
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
         </div>
     </div>
 
     <div class="works-row works-row-2">
-        <h1 class="heading-name">product design</h1>
-        <h1 class="sub-headings">design is thinking made visual</h1>
+        <h1 class="sub-headings">previous work</h1>
         <br>
-        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div class="uk-child-width-expand@s" uk-grid>
             <div>
                 <a href="discover.html">
-                    <img class="home-covers" src="assets/homepage/discover.jpg" alt="">
+                    <img class="home-covers" src="assets/index-2023/discover.png" alt="">
                 </a>
+                <!-- Titles -->
+                <a class="uk-link-reset" href="discover.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    App Assist
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  student loans application web tool (2020)
+                </p>
+              </a>
+                <!-- End Titles -->
             </div>
             <div>
                 <a href="alora.html">
-                    <img class="home-covers" src="assets/homepage/alora.png" alt="">
+                    <img class="home-covers" src="assets/index-2023/alora.png" alt="">
                 </a>
+                <!-- Titles -->
+                <a class="uk-link-reset" href="alora.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                    Alora
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  chrome privacy plug-in (2020)
+                </p>
+              </a>
+                <!-- End Titles -->
             </div>
-            <div>
-                <a href="oddio.html">
-                    <img class="home-covers" src="assets/homepage/oddio.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="uk-child-width-expand@s" uk-grid>
             <div>
                 <a href="nba.html">
-                    <img class="home-covers" src="assets/homepage/nba.png" alt="">
+                    <img class="home-covers" src="assets/index-2023/nba.png" alt="">
                 </a>
-            </div>
-            <div>
 
-            </div>
-
-            <div>
+                <!-- Titles -->
+                <a class="uk-link-reset" href="nba.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                  NBA Fan Zones
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                  AKQA internship (2017)
+                </p>
+              </a>
+                <!-- End Titles -->
             </div>
         </div>
     </div>
 
     <div class="works-row works-row-3">
-        <h1 class="heading-name">creative coding</h1>
-        <h1 class="sub-headings">programming as a design language</h1>
+        <h1 class="sub-headings">playground </h1>
         <br>
         <div class="uk-child-width-expand@s" uk-grid>
             <div>
-                <a href="love-letters.html">
-                    <img class="home-covers" src="assets/homepage/lovelettershome.png" alt="">
+                <a href="alphabet.html">
+                    <img class="home-covers" src="assets/index-2023/alphebet.png" alt="">
                 </a>
+                <!-- Titles -->
+                <a class="uk-link-reset" href="alphabet.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                  A-Z
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                   visual explo (ongoing)
+                </p>
+              </a>
+                <!-- End Titles -->
             </div>
-            <div>
-                <a href="camus.html">
-                    <img class="home-covers" src="assets/homepage/camus-home.png" alt="">
-                </a>
-            </div>
-            <div>
 
+            <div>
+                <a href="https://dribbble.com/jackiehu_" target="_blank">
+                    <img class="home-covers" src="assets/index-2023/100days.png" alt="">
+                </a>
+
+                <!-- Titles -->
+                <a class="uk-link-reset" href="https://dribbble.com/jackiehu_" target="_blank">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                  100 Days UI
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                   dribbble (2020)
+                </p>
+                </a>
+                <!-- End Titles -->
+            </div>
+
+            <div>
+                <a href="love-letters.html">
+                    <img class="home-covers" src="assets/index-2023/loveletters.png" alt="">
+                </a>
+
+                <!-- Titles -->
+                <a class="uk-link-reset" href="love-letters.html">
+                <div class="uk-flex uk-flex-between" style="margin-top:12px">
+                  <div class="uk-text-left titles">
+                  Love Letters
+                  </div>
+                  <div class="uk-align-right uk-margin-remove-bottom" style="width:8%; text-align:center">
+                    <img class="home-covers"  src="assets/index-2023/arrow-right.png" alt="">
+                  </div>
+                </div>
+                <p class="uk-text-muted uk-margin-remove-top">
+                   creative coding (2019)
+                </p>
+              </a>
+                <!-- End Titles -->
             </div>
         </div>
     </div>
 
 
-
     <!-- FOOTNOTE -->
     <div class="bottom-signature">
-        <img src="assets/icons/sealing-line.svg" id="sealing-svg" alt="">
-        <p id="footer_text">design + code by jackie hu </p>
-        <p id="footer_text_small"> last update: sept 2022, paris</p>
+        <!-- <img src="assets/icons/sealing-line.svg" id="sealing-svg" alt=""> -->
+        <p id="footer_text">design + code by jackie hu ©2023</p>
+        <!-- <p id="footer_text_small"> last update: sept 2022, paris</p> -->
     </div>
     <br>
     <!-- FOOTNOTE END -->

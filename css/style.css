@@ -1,13 +1,31 @@
 ::selection {
-    color: black!important;
+    color: #1E1E1E!important;
     background: white  !important;
 }
 
 body{
   height: 100%; !important
   overflow: auto;
-  background-color: #151515;
+  background-color: #1E1E1E;
   color:#F5F4F4;
+}
+
+@font-face{
+  font-family: 'BasisGrotesquePro';
+  src:
+  url('fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'PPEiko-Thin';
+  src:
+  url('fonts/ppeiko-thin.otf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Caveat';
+  src:
+  url('fonts/Caveat-Regular.ttf') format('truetype');
 }
 
 @font-face{
@@ -71,26 +89,45 @@ body{
 /* END HOVER ANIMATION */
 
 .headings{
+  font-family:"PPEiko-Thin";
+  letter-spacing:0.05em;
   font-size: 50px;
-  font-weight:bold;
+  /* font-weight:bold; */
   /* letter-spacing: 5px; */
   color:white;
 }
 
+.heading-projects-t{
+  font-family:"PPEiko-Thin";
+  letter-spacing:0.05em;
+  font-size: 64px;
+  color:white;
+}
+.heading-projects-st{
+  font-family:"PPEiko-Thin";
+  letter-spacing:0.05em;
+  font-size: 36px;
+  color:white;
+}
 .heading-name{
+  font-family: "PPEiko-Thin";
   font-size: 50px;
-  font-weight:bold;
   letter-spacing: 5px;
   color:white;
 
 }
 
-
 .sub-headings{
-  font-family:Helvatica, "Helvetica-Light";
+  font-family:"PPEiko-Thin";
   font-size: 50;
   /* font-weight:light; */
   color:white;
+}
+
+
+.titles{
+  font-family: "BasisGrotesquePro";
+  font-size: 1.3em;
 }
 
 .body-margin{
@@ -172,13 +209,15 @@ body{
 }
 
 p {
-  font-family:"Helvetica-Light";
+  font-family:"BasisGrotesquePro";
+  /* font-family:"Helvetica-Light"; */
+
   /* font-size: 20px; */
   font-size: 1.2em;
 }
 
 .project-content{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .role-time-team-container{
@@ -190,12 +229,14 @@ p {
   margin-bottom: 200px;
 }
 .section-titles{
-  font-family:Helvetica;
-  font-style: bold;
+  font-family:"BasisGrotesquePro";
   font-size: 24px;
-  /* color:#FFC9B8; */
-  color:#21ADFC;
-  letter-spacing: 3px;
+}
+
+.content-description{
+  font-family:"Caveat";
+  font-size: 36px;
+  color: #FF7E00;
 }
 
 .role-time-team{
@@ -319,7 +360,8 @@ line-height: 1.5em
 }
 
 #aboutme-img{
-  padding:50px;
+  padding:120px;
+  
 }
 
 #sketch-div{
@@ -332,8 +374,8 @@ line-height: 1.5em
   font-size: 16px;
   letter-spacing: 2px;
   text-align:center;
-  background-color:#151515; !important
-  margin-bottom: 50px;
+  /* background-color:#1B1B1B; !important */
+  /* margin-bottom: 50px; */
   /* opacity: 50%; */
 }
 
@@ -341,7 +383,7 @@ line-height: 1.5em
   font-size: 12px;
   letter-spacing: 2px;
   text-align:center;
-  background-color:#151515; !important
+  /* background-color:#1B1B1B; !important */
   margin-bottom: 50px;
 
 }
@@ -381,10 +423,16 @@ line-height: 1.5em
   .sub-headings{
     font-size:24px;
   }
+
+  /* .landing{
+    align-items:center;
+
+  } */
   .introduction{
-    margin-top: 10px;
+    /* margin-top: 10px;
     margin-left: 50px;
-    padding: 0px;
+    padding: 0px; */
+    /* margin: auto; */
   }
 
   #sketch-div{
